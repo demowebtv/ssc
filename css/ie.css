@@ -1,0 +1,16 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .list-item .title {
+      line-height: 14px;
+    }
+    .box-news .news-item-top .content .news-title {
+      max-height: 48px;
+      overflow: hidden;
+      line-height: 20px;
+    }
+    .news-child .news-item .news-title{
+      line-height: 15px;
+    }
+    .ct-content-item .title {
+     line-height: 15.1px;
+    }
+  }
