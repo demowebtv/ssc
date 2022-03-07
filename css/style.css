@@ -72,21 +72,15 @@ ul {
 
 .banner {
     background: url(../img/banner.png);
-    height: 155px;
+    height: 135px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.banner_tt {
-    background: url(../img/banner_tt.png);
-    height: 155px;
-    background-repeat: no-repeat;
-}
-
 .logo {
     float: left;
-    margin-top: 30px;
+    margin-top: 22px;
 }
 
 .box-shadow {
@@ -109,18 +103,35 @@ ul {
     font-size: 16px;
     font-weight: bold;
     padding: 19px 20px;
+    border-bottom:4px solid #063521 ;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-item.active .nav-link {
     color: #35b470;
-    border-bottom:4px solid #277460 ;
+    border-bottom:4px solid #FFF;
 }
-
-.nav-item-menu {
+.nav-item-menu{padding-right: 15px;}
+.nav-item-menu a {
     position: relative;
-    top: 13px;
+    top: 12px;
     padding-right: 15px;
+    width: 30px;
+    height: 25px;
+    background: url(../img/home-button.png) no-repeat;
+    background-size: contain;
+    display: block;
+
+}
+.nav-item-menu:hover a {
+    position: relative;
+    top: 12px;
+    padding-right: 15px;
+    width: 30px;
+    height: 25px;
+    background-size: contain;
+    display: block;
+    background: url(../img/home-hover.png) no-repeat;
 }
 .dropdown:hover .dropdown-menu {
     display: block !important;
@@ -130,25 +141,27 @@ ul {
     border-radius: 0;
     border: none;
 }
-
+ul.dropdown-menu{padding: 10px 0 !important;}
 .dropdown-item {
     text-decoration: none;
     background-color: #f8f9fa;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .dropdown-item.active,
 .dropdown-item:active,
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: #FFF;
+    color: #35b470;
     text-decoration: none;
     background-color: #f8f9fa;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .main {
@@ -365,7 +378,7 @@ ul {
     box-sizing: border-box;
     background: #ffffff;
 }
-.list-item-scroll{max-height: 502px;}
+.list-item-scroll{max-height: 496px;}
 .list-item {
     float: left;
     padding-left: 20px;
@@ -385,7 +398,7 @@ ul {
 }
 .list-item .thumb {
     width: 156px;
-    height: 115px;
+    height: 113px;
     float: left;
     overflow: hidden;
 }
@@ -467,8 +480,8 @@ ul {
 }
 
 .cate-title .heading {
-    height: 60px;
-    line-height: 60px;
+    height: 55px;
+    line-height: 55px;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
@@ -480,8 +493,8 @@ ul {
     background-position: right;background-size: contain;
 }
 .cate-title-nobg .heading {
-    height: 60px;
-    line-height: 60px;
+    height: 55px;
+    line-height: 55px;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
@@ -490,6 +503,7 @@ ul {
     background-image: linear-gradient(to right, #08472d, #11954e);
     margin-bottom: 0px;
 }
+.bg-green{background: #01884e!important;}
 
 .left-item-double .tab-content-item {
     float: left;
@@ -1244,10 +1258,10 @@ ul {
     margin-right: 20px;
     position: relative;
 }
-
+.ul-ft li:hover a{color: #35b470}
 .search .box-search {
     position: absolute;
-    right: 131px;
+    right: 60px;
     height: 58px;
     bottom: -2px;
     width: 500px;
