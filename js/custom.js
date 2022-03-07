@@ -17,15 +17,6 @@ $(document).ready(function () {
     dots: true,
     nav: false,
   });
-  $("#slide-album1").owlCarousel({
-    loop: true,
-    autoPlay: false,
-    autoplayTimeout: 5000,
-    smartSpeed: 500,
-    items: 1,
-    dots: true,
-    nav: false,
-  });
   $("#slide-videos").owlCarousel({
     loop: true,
     autoPlay: false,
