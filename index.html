@@ -1,1012 +1,1050 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/owl.carousel.css"/>
-    <link rel="stylesheet" href="css/fontello.css"/>
-    <link rel="stylesheet" href="css/fontawesome.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/responsive.css"/>
-    <link rel="stylesheet" href="css/ie.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/green-audio-player.min.css" />
+    <link rel="stylesheet" href="css/ie.css" />
+    <link rel="stylesheet" href="css/video-js.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 </head>
+
 <body>
-<header>
-    <div class="header-banner">
-        <div class="banner">
-            <div class="container">
-                <div class="btn-menu">
-                    <a href="javascript:void(0)" class="btn-menu-mobile">
-                        <i class="icon-menu"></i>
-                    </a>
-                </div>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt=""/>
-                    </a>
-                </div>
-                <div id="menu-mobile">
-                    <div class="head-menu">
-                        <div class="top-head-menu">
-                <span id="closemenu" class="close-menu  pointer">
-                    <i class="icon-close"></i>
-                </span>
-                            <div class="pd-10">
-                                <h2 class="aside-title">Danh mục</h2>
+    <header>
+        <div class="header-banner">
+            <div class="banner">
+                <div class="container">
+                    <div class="btn-menu">
+                        <a href="javascript:void(0)" class="btn-menu-mobile">
+                            <i class="icon-menu"></i>
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div id="menu-mobile">
+                        <div class="head-menu">
+                            <div class="top-head-menu">
+                                <span id="closemenu" class="close-menu  pointer">
+                                    <i class="icon-close"></i>
+                                </span>
+                                <div class="pd-10">
+                                    <h2 class="aside-title">Danh mục</h2>
+                                </div>
+                                <form action="search" class="search" method="get" accept-charset="utf-8">
+                                    <input type="text" name="q" placeholder="Tìm kiếm" autocomplete="off">
+                                    <button type="submit" title="Tìm kiếm" class="btn-search-vne">
+                                        <i class="icon-search"></i>
+                                    </button>
+                                </form>
                             </div>
-                            <form action="search" class="search" method="get" accept-charset="utf-8">
-                                <input type="text" name="q" placeholder="Tìm kiếm" autocomplete="off">
-                                <button type="submit" title="Tìm kiếm" class="btn-search-vne">
-                                    <i class="icon-search"></i>
-                                </button>
-                            </form>
+                            <ul class="menu-category">
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="tintuc.html">Tin tức & sự kiện</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hệ thống văn bản</a>
+                                </li>
+                                <li>
+                                    <a href="#">Đào tạo</a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="menu-category">
-                            <li>
-                                <a href="#">Giới thiệu</a>
-                            </li>
-                            <li>
-                                <a href="tintuc.html">Tin tức & sự kiện</a>
-                            </li>
-                            <li>
-                                <a href="#">Hệ thống văn bản</a>
-                            </li>
-                            <li>
-                                <a href="#">Đào tạo</a>
-                            </li>
-                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="navbar" class="menu">
+                <nav class="navbar box-shadow navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item nav-item-menu">
+                                    <a class="nav-item-menu" href="index.html">
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#">
+                                        Giới thiệu
+                                    </a>
+                                    <ul class="dropdown-menu box-shadow">
+                                        <li><a class="dropdown-item" href="#">Lịch sử phát triển</a></li>
+                                        <li><a class="dropdown-item" href="#">Chức năng nhiệm vụ</a></li>
+                                        <li><a class="dropdown-item" href="#">Cơ cấu tổ chức</a></li>
+                                        <li><a class="dropdown-item" href="#">Ban Lãnh đạo UBCKNN</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="tintuc.html">
+                                        Tin tức & sự kiện
+                                    </a>
+                                    <ul class="dropdown-menu box-shadow">
+                                        <li><a class="dropdown-item" href="#">Thông báo chỉ đạo – điều hành</a></li>
+                                        <li><a class="dropdown-item" href="#">Thông tin công bố</a></li>
+                                        <li><a class="dropdown-item" href="#">Thanh tra – giám sát</a></li>
+                                        <li><a class="dropdown-item" href="#">Hoạt động phát hành</a></li>
+                                        <li><a class="dropdown-item" href="#">Hoạt động kinh doanh chứng khoán</a></li>
+                                        <li><a class="dropdown-item" href="#">Hoạt động hợp tác quốc tế</a></li>
+                                        <li><a class="dropdown-item" href="#">Hoạt động kỷ niệm</a></li>
+                                        <li><a class="dropdown-item" href="#">Chiến lược phát triển ngành</a></li>
+                                        <li><a class="dropdown-item" href="#">Dự án, hạng mục đầu tư, đấu thầu, mua sắm
+                                                công</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#">
+                                        Hệ thống văn bản
+                                    </a>
+                                    <ul class="dropdown-menu box-shadow">
+                                        <li><a class="dropdown-item" href="#">Luật</a></li>
+                                        <li><a class="dropdown-item" href="#">Nghị định</a></li>
+                                        <li><a class="dropdown-item" href="#">Thông tư</a></li>
+                                        <li><a class="dropdown-item" href="#">Quyết định</a></li>
+                                        <li><a class="dropdown-item" href="#">Các văn bản khác</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#">
+                                        Đào tạo
+                                    </a>
+                                    <ul class="dropdown-menu box-shadow">
+                                        <li><a class="dropdown-item" href="#">Thông tin đào tạo</a></li>
+                                        <li><a class="dropdown-item" href="#">Kiến thức chứng khoán</a></li>
+                                        <li><a class="dropdown-item" href="#">Đề tài nghiên cứu khoa học</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="search">
+                                <a href="index.html">
+                                    <img src="img/vi.png" />
+                                </a>
+                                <a href="index_en.html">
+                                    <img src="img/en.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-top">
+                <div class="container">
+                    <div class="float-left">
+                        <span class="headtime">Thứ hai 22/03/2021 23:27</span>
+                    </div>
+                    <div class="language">
+                        <div class="search">
+                            <div class="box-search">
+                                <input class="input-search form-control" type="search" placeholder="Tìm kiếm"
+                                    aria-label="Tìm kiếm">
+                            </div>
+                            <a class="btn-search" href="javascript:void(0)">
+                                Tìm kiếm <i class="icon-search"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="navbar" class="menu">
-            <nav class="navbar box-shadow navbar-expand-lg navbar-light">
-                <div class="container">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item nav-item-menu">
-                                <a class="nav-item-menu" href="index.html">
+        <nav id="navbar-mb" class="site-menu">
+            <div class="container">
+                <ul class="site-menu__list">
+                    <li>
+                        <a href="index.html" class="pr-3"> <img src="img/home-button.png" class="mb-home" /></a>
+                    </li>
+                    <li>
+                        <a href="#">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="tintuc.html">Tin tức & sự kiện</a>
+                    </li>
+                    <li>
+                        <a href="#">Hệ thống văn bản</a>
+                    </li>
+                    <li>
+                        <a href="#">Đào tạo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="main-top">
+                <div class="box-news">
+                    <div id="news-slider" class="home-new-slide owl-carousel owl-theme">
+                        <div class="news-item-top">
+                            <div class="image w-100 h-100">
+                                <a href="tintuc-chitiet.html">
+                                    <img src="img/slide/slide1.png" alt="">
                                 </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">
-                                    Giới thiệu
+                            </div>
+                            <div class="content">
+                                <h3 class="news-title">
+                                    <a href="tintuc-chitiet.html">Bộ trưởng Bộ Tài chính khai trương phiên giao dịch
+                                        chứng khoán đầu năm 2022 tại SGDCK Hà Nội</a>
+                                    <span class="time">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        04/03/2022 14:16:01
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="news-item-top">
+                            <div class="image w-100 h-100">
+                                <a href="">
+                                    <img src="img/slide/slide2.png" alt="">
                                 </a>
-                                <ul class="dropdown-menu box-shadow" >
-                                    <li><a class="dropdown-item" href="#">Lịch sử phát triển</a></li>
-                                    <li><a class="dropdown-item" href="#">Chức năng nhiệm vụ</a></li>
-                                    <li><a class="dropdown-item" href="#">Cơ cấu tổ chức</a></li>
-                                    <li><a class="dropdown-item" href="#">Ban Lãnh đạo UBCKNN</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="tintuc.html">
-                                    Tin tức & sự kiện
+                            </div>
+                            <div class="content">
+                                <h3 class="news-title">
+                                    <a href="#">UBCKNN tổ chức Hội thảo về khung pháp lý và giám sát trái phiếu
+                                        xanh</a>
+                                    <span class="time">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        04/03/2022 14:16:01
+                                    </span>
+                                </h3>
+
+                            </div>
+                        </div>
+                        <div class="news-item-top">
+                            <div class="image w-100 h-100">
+                                <a href="">
+                                    <img src="img/slide/slide3.png" alt="">
                                 </a>
-                                <ul class="dropdown-menu box-shadow">
-                                    <li><a class="dropdown-item" href="#">Thông báo chỉ đạo – điều hành</a></li>
-                                    <li><a class="dropdown-item" href="#">Thông tin công bố</a></li>
-                                    <li><a class="dropdown-item" href="#">Thanh tra – giám sát</a></li>
-                                    <li><a class="dropdown-item" href="#">Hoạt động phát hành</a></li>
-                                    <li><a class="dropdown-item" href="#">Hoạt động kinh doanh chứng khoán</a></li>
-                                    <li><a class="dropdown-item" href="#">Hoạt động hợp tác quốc tế</a></li>
-                                    <li><a class="dropdown-item" href="#">Hoạt động kỷ niệm</a></li>
-                                    <li><a class="dropdown-item" href="#">Chiến lược phát triển ngành</a></li>
-                                    <li><a class="dropdown-item" href="#">Dự án, hạng mục đầu tư, đấu thầu, mua sắm công</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">
-                                    Hệ thống văn bản
-                                </a>
-                                <ul class="dropdown-menu box-shadow">
-                                    <li><a class="dropdown-item" href="#">Luật</a></li>
-                                    <li><a class="dropdown-item" href="#">Nghị định</a></li>
-                                    <li><a class="dropdown-item" href="#">Thông tư</a></li>
-                                    <li><a class="dropdown-item" href="#">Quyết định</a></li>
-                                    <li><a class="dropdown-item" href="#">Các văn bản khác</a></li>
-                                </ul>
-                            </li><li class="nav-item dropdown">
-                                <a class="nav-link" href="#">
-                                    Đào tạo
-                                </a>
-                                <ul class="dropdown-menu box-shadow">
-                                    <li><a class="dropdown-item" href="#">Thông tin đào tạo</a></li>
-                                    <li><a class="dropdown-item" href="#">Kiến thức chứng khoán</a></li>
-                                    <li><a class="dropdown-item" href="#">Đề tài nghiên cứu khoa học</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="search">
-                            <a href="index.html">
-                                <img src="img/vi.png"/>
-                            </a>
-                            <a href="index_en.html">
-                                <img src="img/en.png"/>
-                            </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="news-title">
+                                    <a href="#">Lãnh đạo UBCKNN tiếp xã giao Tham tán kinh tế Đại sứ quán Australia
+                                        tại Việt Nam</a>
+                                    <span class="time">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        04/03/2022 14:16:01
+                                    </span>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-        <div class="header-top">
-            <div class="container">
-                <div class="float-left">
-                    <span class="headtime">Thứ hai 22/03/2021 23:27</span>
-                </div>
-                <div class="language">
-                    <div class="search">
-                        <div class="box-search">
-                            <input class="input-search form-control" type="search" placeholder="Tìm kiếm"
-                                   aria-label="Tìm kiếm">
+
+                <div class="list-news">
+                    <div class="list-news-items">
+                        <div class="cate-title-nobg">
+                            <h2 class="heading bg-green">Tin tức - sự kiện</h2>
                         </div>
-                        <a class="btn-search" href="javascript:void(0)">
-                            Tìm kiếm <i class="icon-search"></i>
+                        <div class="scroll-table list-item-scroll">
+                            <div class="list-item">
+                                <div class="thumb">
+                                    <a href="tintuc-comment.html"><img src="img/new/top_2_thum1.png" class="img-fluid"
+                                            alt=""></a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="tintuc-comment.html" class="three-line">
+                                        Đảng bộ cơ quan Ủy ban Chứng khoán nhà nước vững tin bước vào mùa Xuân mới
+                                    </a>
+                                </h3>
+                                <div class="datetime">
+                                    <span class="item-calendar"></span>
+                                    <span class="time">15/04/2021 10:26:08</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="thumb">
+                                    <a href="tintuc-binhchon.html"><img src="img/new/top_2_thum2.png" class="img-fluid"
+                                            alt=""></a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="tintuc-binhchon.html" class="three-line">
+                                        Bổ nhiệm Lãnh đạo Sở Giao dịch chứng khoán Việt Nam và HNX
+                                    </a>
+                                </h3>
+                                <div class="datetime">
+                                    <span class="item-calendar"></span>
+                                    <span class="time">15/04/2021 10:26:08</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="thumb">
+                                    <a href="#"><img src="img/new/top_2_thum3.png" class="img-fluid" alt=""></a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="tintuc-comment.html" class="three-line">
+                                        Công bố Lệnh của Chủ tịch nước CHXHCN Việt Nam công bố Luật Chứng khoán số
+                                        54/2019/QH14
+                                    </a>
+                                </h3>
+                                <div class="datetime">
+                                    <span class="item-calendar"></span>
+                                    <span class="time">15/04/2021 10:26:08</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="thumb">
+                                    <a href="#"><img src="img/new/top_2_thum4.png" class="img-fluid" alt=""></a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="tintuc-binhchon.html" class="three-line">
+                                        Thư chúc mừng của Chủ tịch Ủy ban Chứng khoán nhà nước
+                                    </a>
+                                </h3>
+                                <div class="datetime">
+                                    <span class="item-calendar"></span>
+                                    <span class="time">15/04/2021 10:26:08</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="thumb">
+                                    <a href="#"><img src="img/new/top_2_thum1.png" class="img-fluid" alt=""></a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="" class="three-line">
+                                        Đảng ủy cơ quan Ủy ban Chứng khoán Nhà nước sơ kết công tác xây dựng Đảng 6
+                                        tháng đầu
+                                        năm
+                                    </a>
+                                </h3>
+                                <div class="datetime">
+                                    <span class="item-calendar"></span>
+                                    <span class="time">15/04/2021 10:26:08</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="thumb">
+                                    <a href="#"><img src="img/new/top_2_thum2.png" class="img-fluid" alt=""></a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="" class="three-line">
+                                        Bổ nhiệm Lãnh đạo Sở Giao dịch chứng khoán Việt Nam và HNX
+                                    </a>
+                                </h3>
+                                <div class="datetime">
+                                    <span class="item-calendar"></span>
+                                    <span class="time">15/04/2021 10:26:08</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="thumb">
+                                    <a href="#"><img src="img/new/top_2_thum3.png" class="img-fluid" alt=""></a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="" class="three-line">
+                                        Công bố Lệnh của Chủ tịch nước CHXHCN Việt Nam công bố Luật Chứng khoán số
+                                        54/2019/QH14
+                                    </a>
+                                </h3>
+                                <div class="datetime">
+                                    <span class="item-calendar"></span>
+                                    <span class="time">15/04/2021 10:26:08</span>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="thumb">
+                                    <a href="#"><img src="img/new/top_2_thum4.png" class="img-fluid" alt=""></a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="" class="three-line">
+                                        Thư chúc mừng của Chủ tịch Ủy ban Chứng khoán nhà nước
+                                    </a>
+                                </h3>
+                                <div class="datetime">
+                                    <span class="item-calendar"></span>
+                                    <span class="time">15/04/2021 10:26:08</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="list-cate">
+                    <div class="cate-item">
+                        <a href="">
+                            <img src="img/new/top_right1.png" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="cate-item">
+                        <a href="">
+                            <img src="img/new/top_right2.png" class="img-fluid pt-1" />
+                        </a>
+                    </div>
+                    <div class="cate-item">
+                        <a href="">
+                            <img src="img/new/top_right3.png" class="img-fluid pt-1" />
+                        </a>
+                    </div>
+                    <div class="cate-item">
+                        <a href="">
+                            <img src="img/new/top_right4.png" class="img-fluid pt-1" />
                         </a>
                     </div>
                 </div>
             </div>
+            <div class="main-content pt-3">
+                <div class="row">
+                    <div class="col-lg-4 list-items row-eq-height">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">THÔNG BÁO - Chỉ đạo điều hành</h2>
+                            </div>
+                            <div class="cate-tab">
+                                <div class="cate-tab-content pt-3">
+                                    <div class="ct-content-wrap">
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    UBCKNN thông báo giảm kiểm toán viên trong danh sách kiểm toán chấp
+                                                    thuận
+                                                    năm 2021...
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Chấp thuận tăng kiểm toán viên trong danh sách kiểm toán viên được
+                                                    chấp
+                                                    thuận năm 2021...
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Hủy tư cách công ty đại chúng của CTCP Đo đạc và Khoáng sản
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-button">
+                                        <a class="btn-viewmore" href="">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 list-items center-list row-eq-height">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">THÔNG TIN CÔNG BỐ</h2>
+                            </div>
+                            <div class="cate-tab">
+                                <div class="cate-tab-content pt-3">
+                                    <div class="ct-content-wrap">
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Doanh nghiệp FDI niêm yết, đăng ký giao dịch trên TTCK – Thực trạng,
+                                                    tác
+                                                    động
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    UBCKNN công bố Quyết định số 667/QĐ - UBCK về việc công khai quyết
+                                                    toán ngân
+                                                    sách năm 2020
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Thông báo nộp lệ phí cấp lại Chứng chỉ hành nghề chứng khoán (Thông
+                                                    báo số
+                                                    144/TB-UBCK)
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-button">
+                                        <a class="btn-viewmore" href="">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 list-items row-eq-height">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">HOẠT ĐỘNG PHÁT HÀNH</h2>
+                            </div>
+                            <div class="cate-tab">
+                                <div class="cate-tab-content pt-3">
+                                    <div class="ct-content-wrap">
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    UBCKNN nhận được tài liệu báo cáo phát hành cổ phiếu để trả cổ tức
+                                                    của Ngân
+                                                    hàng TMCP Nam Á
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    UBCKNN nhận được báo cáo kết quả chào bán cổ phiếu riêng lẻ của CTCP
+                                                    Rau quả
+                                                    Thực phẩm An Giang
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    UBCKNN nhận được báo cáo kết quả chào bán cổ phiếu riêng lẻ của CTCP
+                                                    Dịch vụ
+                                                    biển Tân Cảng
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-button">
+                                        <a class="btn-viewmore" href="">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 list-items row-eq-height">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">HOẠT ĐỘNG KINH DOANH CHỨNG KHOÁN</h2>
+                            </div>
+                            <div class="cate-tab">
+                                <div class="cate-tab-content pt-3">
+                                    <div class="ct-content-wrap">
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    UBCKNN điều chỉnh Giấy phép thành lập và hoạt động của Công ty cổ
+                                                    phần chứng
+                                                    khoán VIX
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    UBCKNN nhận được tài liệu báo cáo kết quả phân phối chứng quyền đợt
+                                                    5 năm
+                                                    2021 của Công ty CP Chứng khoán KIS Việt Nam
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Cấp Giấy chứng nhận đăng ký lập quỹ đại chúng cho Quỹ đầu tư trái
+                                                    phiếu linh
+                                                    hoạt Mirae Asset Việt Nam
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-button">
+                                        <a class="btn-viewmore" href="">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 list-items center-list row-eq-height">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">THANH TRA - GIÁM SÁT</h2>
+                            </div>
+                            <div class="cate-tab">
+                                <div class="cate-tab-content pt-3">
+                                    <div class="ct-content-wrap">
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường
+                                                    chứng
+                                                    khoán đối với Công ty cổ phần Tập đoàn Kỹ nghệ...
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường
+                                                    chứng
+                                                    khoán đối với Công ty cổ phần Louis Capital
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường
+                                                    chứng
+                                                    khoán đối với CTCP Kính Đáp Cầu
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-button">
+                                        <a class="btn-viewmore" href="">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 list-items row-eq-height">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">VĂN BẢN MỚI</h2>
+                            </div>
+                            <div class="cate-tab">
+                                <div class="cate-tab-content pt-3">
+                                    <div class="ct-content-wrap">
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường
+                                                    chứng
+                                                    khoán đối với Công ty cổ phần Tập đoàn Kỹ nghệ...
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường
+                                                    chứng
+                                                    khoán đối với Công ty cổ phần Louis Capital
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="ct-content-item">
+                                            <h3 class="title">
+                                                <a class="two-line" href="">
+                                                    Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường
+                                                    chứng
+                                                    khoán đối với CTCP Kính Đáp Cầu
+                                                </a>
+                                            </h3>
+                                            <div class="datetime">
+                                                <span class="item-calendar"></span>
+                                                <span class="time">15/04/2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-button">
+                                        <a class="btn-viewmore" href="">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 list-items row-eq-height">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">TIN ẢNH</h2>
+                            </div>
+                            <div class="cate-tab">
+                                <div class="cate-tab-content pt-3">
+                                    <div id="slide-album" class="home-new-slide owl-carousel owl-theme">
+                                        <div class="news-item">
+                                            <div class="image">
+                                                <a href="">
+                                                    <img src="img/new/new-img.png" class="img-fluid" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="news-title">
+                                                    <a href="" class="three-line">
+                                                        Đảng ủy cơ quan Ủy ban Chứng khoán Nhà nước sơ kết công tác xây
+                                                        dựng
+                                                        Đảng 6 tháng đầu năm và triển khai nhiệm vụ 6 tháng cuối năm
+                                                        2021</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="news-item">
+                                            <div class="image">
+                                                <a href="">
+                                                    <img src="img/new/new-img.png" class="img-fluid" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="news-title">
+                                                    <a href="" class="two-line">Đảng ủy cơ quan Ủy ban Chứng khoán Nhà
+                                                        nước sơ kết công tác xây dựng Đảng 6 tháng đầu năm và triển khai
+                                                        nhiệm vụ 6 tháng cuối năm 2021</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="news-item">
+                                            <div class="image">
+                                                <a href="">
+                                                    <img src="img/new/new-img.png" class="img-fluid" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="news-title">
+                                                    <a href="" class="two-line">Đảng ủy cơ quan Ủy ban Chứng khoán Nhà
+                                                        nước sơ kết công tác xây dựng
+                                                        Đảng 6 tháng đầu năm và triển khai nhiệm vụ 6 tháng cuối năm
+                                                        2021</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 list-items center-list row-eq-height">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">TIN VIDEO</h2>
+                            </div>
+                            <div class="cate-tab">
+                                <div class="cate-tab-content pt-3">
+                                    <div id="slide-videos" class="slide-videos owl-carousel owl-theme">
+                                        <div class="news-item">
+                                            <div class="image">
+                                                <iframe class="border-0" width="100%" height="257" src="https://www.youtube.com/embed/syr2HTL_Sk8"></iframe>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="news-title">
+                                                    <a href="" class="two-line">
+                                                        Quy định về quản trị công ty áp dụng đối với công ty đại chúng theo nghị định số 155/2020/nđ-cp
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="news-item">
+                                            <div class="image">
+                                                <iframe class="border-0" width="100%" height="257" src="https://www.youtube.com/embed/kNNY5EIWBsU"></iframe>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="news-title">
+                                                    <a href="" class="two-line">Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng khoán theo nghị định 156</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 list-items row-eq-height">
+                        <div class="left-item-double">
+                            <div class="cate-title">
+                                <h2 class="heading">BIỂU ĐỒ GIAO DỊCH CHỨNG KHOÁN</h2>
+                            </div>
+                            <div class="box-tab">
+                                <div class="tab-heading">
+                                    <div data-target="tab1" class="tab-heading-item active">
+                                        HNX
+                                    </div>
+                                    <div data-target="tab2" class="tab-heading-item">HOSE</div>
+                                </div>
+                                <div class="tab-content">
+                                    <div data-source="tab1" class="tab-content-item">
+                                        <div class="sub-tab">
+                                            <img src="img/char.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div data-source="tab2" class="tab-content-item" style="display: none">
+                                        <p class="p-5">content 2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 list-items row-eq-height">
+                        <div class="row">
+                            <div class="col-lg-6 list-items row-eq-height">
+                                <div class="left-item">
+                                    <div class="cate-title">
+                                        <h2 class="heading">THỐNG KÊ THỊ TRƯỜNG</h2>
+                                    </div>
+                                    <div class="cate-tab">
+                                        <div class="cate-tab-content pt-3 no-height">
+                                            <div class="ct-content-item">
+                                                <h3 class="title">
+                                                    <a class="two-line" href="">
+                                                        Giao dịch của nhà đầu tư nước ngoài 11 năm 2021
+                                                    </a>
+                                                </h3>
+                                                <div class="datetime">
+                                                    <span class="item-calendar"></span>
+                                                    <span class="time">15/04/2021</span>
+                                                </div>
+                                            </div>
+                                            <div class="ct-content-item">
+                                                <h3 class="title">
+                                                    <a class="two-line" href="">
+                                                        Giá trị giao dịch bình quân tháng 11 năm 2021
+                                                    </a>
+                                                </h3>
+                                                <div class="datetime">
+                                                    <span class="item-calendar"></span>
+                                                    <span class="time">15/04/2021</span>
+                                                </div>
+                                            </div>
+                                            <div class="ct-content-item">
+                                                <h3 class="title">
+                                                    <a class="two-line" href="">
+                                                        Chỉ số chứng khoán trong nước tháng 11 năm 2021
+                                                    </a>
+                                                </h3>
+                                                <div class="datetime">
+                                                    <span class="item-calendar"></span>
+                                                    <span class="time">15/04/2021</span>
+                                                </div>
+                                            </div>
+                                            <div class="ct-content-item">
+                                                <h3 class="title">
+                                                    <a class="two-line" href="">
+                                                        Chỉ số chứng khoán trong nước tháng 11 năm 2021
+                                                    </a>
+                                                </h3>
+                                                <div class="datetime">
+                                                    <span class="item-calendar"></span>
+                                                    <span class="time">15/04/2021</span>
+                                                </div>
+                                            </div>
+                                            <div class="ct-content-button">
+                                                <a class="btn-viewmore" href="">Xem thêm</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 list-items center-list row-eq-height">
+                                <div class="left-item">
+                                    <div class="cate-title">
+                                        <h2 class="heading">LIên kết nhanh</h2>
+                                    </div>
+                                    <div class="website-link">
+                                        <div class="web-item">
+                                            <a href=""><img src="img/icon-ap.png"> ẤN PHẨM</a>
+                                        </div>
+                                        <div class="web-item">
+                                            <a href=""><img src="img/icon-gy.png"> GÓP Ý DỰ THẢO VĂN BẢN</a>
+                                        </div>
+                                        <div class="web-item">
+                                            <a href=""><img src="img/icon-ask.png">HỎI - ĐÁP PHÁP LUẬT</a>
+                                        </div>
+                                        <div class="web-item">
+                                            <a href=""><img src="img/icon-rp.png">PHẢN ÁNH - KIẾN NGHỊ</a>
+                                        </div>
+                                        <div class="web-item">
+                                            <a href=""><img src="img/icon-kn.png">KHIẾU NẠI - TỐ CÁO</a>
+                                        </div>
+                                        <div class="web-item">
+                                            <a href=""><img src="img/icon-ltcd.png">LỊCH TIẾP CÔNG DÂN</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row logo-website">
+                            <div class="col-lg-6 p-0">
+                                <img src="img/dcsvn.png" class="img-fluid">
+                                <img src="img/chinhphu.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 p-0 logo-website-right ">
+                                <img src="img/vpqh.png" class="img-fluid">
+                                <img src="img/btc.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <img src="img/banner_knscc.png" class="img-fluid banner_knscc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 list-items row-eq-height">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">LIÊN KẾT WEBSITE</h2>
+                            </div>
+                            <div class="website-link">
+                                <div class="web-item">
+                                    <a href="">BỘ VÀ CÁC CƠ QUAN NGANG BỘ</a>
+                                </div>
+                                <div class="web-item">
+                                    <a href="">CÁC ĐƠN VỊ TỔNG CỤC (BỘ TÀI CHÍNH) </a>
+                                </div>
+                                <div class="web-item">
+                                    <a href="">ỦY BAN CHỨNG KHOÁN CÁC NƯỚC</a>
+                                </div>
+                                <div class="web-item">
+                                    <a href="">CÁC CƠ QUAN BÁO CHÍ</a>
+                                </div>
+                            </div>
+                            <div class="list-banner-right"><img src="img/banner-right-b-1.png" class="img-fluid p-1">
+                                <img src="img/banner-right-b-2.png" class="img-fluid p-1">
+                                <img src="img/banner-right-b-3.png" class="img-fluid p-1">
+                                <img src="img/banner-right-b-4.png" class="img-fluid p-1">
+                                <img src="img/banner-right-b-5.png" class="img-fluid p-1">
+                                <img src="img/banner-right-b-6.png" class="img-fluid p-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <nav id="navbar-mb" class="site-menu">
+
+    <div class="footer">
         <div class="container">
-            <ul class="site-menu__list">
-                <li>
-                    <a href="index.html" class="pr-3"> <img src="img/home-button.png" class="mb-home"/></a>
-                </li>
-                <li>
-                    <a href="#">Giới thiệu</a>
-                </li>
-                <li>
-                    <a href="tintuc.html">Tin tức & sự kiện</a>
-                </li>
-                <li>
-                    <a href="#">Hệ thống văn bản</a>
-                </li>
-                <li>
-                    <a href="#">Đào tạo</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-<div class="main">
-    <div class="container">
-        <div class="main-top">
-            <div class="box-news">
-                <div id="home_slide2" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="news-item-top">
-                                <div class="image">
-                                    <a href="tintuc-chitiet.html">
-                                        <img src="img/slide/slide1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h3 class="news-title">
-                                        <a href="tintuc-chitiet.html">Bộ trưởng Bộ Tài chính khai trương phiên giao dịch chứng khoán đầu
-                                            năm 2022 tại SGDCK Hà Nội</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="news-item-top">
-                                <div class="image">
-                                    <a href="">
-                                        <img src="img/slide/slide2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h3 class="news-title">
-                                        <a href="#">UBCKNN tổ chức Hội thảo về khung pháp lý và giám sát trái phiếu
-                                            xanh</a>
-                                    </h3>
+            <div class="ft-left">
+                <a class="logo-ft pt-2" href="">
+                    <img src="img/logo.png" alt="" />
+                </a>
+            </div>
+            <div class="ft-center">
+                <div class="ft-center-content">
+                    <p class="fsize-18"><b>CỔNG THÔNG TIN ĐIỆN TỬ - ỦY BAN CHỨNG KHOÁN NHÀ NƯỚC</b></p>
+                    <p>
+                        Số giấy phép: <strong>300/GP-BC, Bộ Văn hoá - Thông tin cấp ngày 01/7/2004</strong><br>
+                        Tổng biên tập: <strong>Phó Chủ Tịch UBCKNN – Ông Phạm Hồng Sơn.</strong><br>
+                        <strong> Địa chỉ:</strong> Số 234 Lương Thế Vinh, Phường Trung Văn, Quận Nam Từ Liêm, Tp. Hà
+                        Nội<br>
+                        <strong>Điện thoại:</strong> (84-24) 39.340.750 Fax: (84-24) 39.340.739
+                    </p>
+                </div>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="news-item-top">
-                                <div class="image">
-                                    <a href="">
-                                        <img src="img/slide/slide3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h3 class="news-title">
-                                        <a href="#">Lãnh đạo UBCKNN tiếp xã giao Tham tán kinh tế Đại sứ quán Australia
-                                            tại Việt Nam</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <ol class="carousel-indicators">
-                        <li data-target="#home_slide2" data-slide-to="0" class="active"></li>
-                        <li data-target="#home_slide2" data-slide-to="1"></li>
-                        <li data-target="#home_slide2" data-slide-to="2"></li>
-                    </ol>
-                </div>
-                <!--/.Carousel Wrapper-->
-            </div>
-
-            <div class="list-news">
-                <div class="list-news-items">
-                    <div class="cate-title-nobg">
-                        <h2 class="heading bg-green">Tin tức - sự kiện</h2>
-                    </div>
-                    <div class="scroll-table list-item-scroll">
-                    <div class="list-item">
-                        <div class="thumb">
-                            <a href="tintuc-comment.html"><img src="img/new/top_2_thum1.png" class="img-fluid" alt=""></a>
-                        </div>
-                        <h3 class="title">
-                            <a href="tintuc-comment.html" class="three-line inc-title">
-                                Đảng bộ cơ quan Ủy ban Chứng khoán nhà nước vững tin bước vào mùa Xuân mới
-                            </a>
-                        </h3>
-                        <div class="datetime">
-                            <span class="item-calendar"></span>
-                            <span class="time">15/04/2021 10:26:08</span>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="thumb">
-                            <a href="tintuc-binhchon.html"><img src="img/new/top_2_thum2.png" class="img-fluid" alt=""></a>
-                        </div>
-                        <h3 class="title">
-                            <a href="tintuc-binhchon.html" class="three-line inc-title">
-                                Bổ nhiệm Lãnh đạo Sở Giao dịch chứng khoán Việt Nam và HNX
-                            </a>
-                        </h3>
-                        <div class="datetime">
-                            <span class="item-calendar"></span>
-                            <span class="time">15/04/2021 10:26:08</span>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="thumb">
-                            <a href="#"><img src="img/new/top_2_thum3.png" class="img-fluid" alt=""></a>
-                        </div>
-                        <h3 class="title">
-                            <a href="tintuc-comment.html" class="three-line inc-title">
-                                Công bố Lệnh của Chủ tịch nước CHXHCN Việt Nam công bố Luật Chứng khoán số 54/2019/QH14
-                            </a>
-                        </h3>
-                        <div class="datetime">
-                            <span class="item-calendar"></span>
-                            <span class="time">15/04/2021 10:26:08</span>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="thumb">
-                            <a href="#"><img src="img/new/top_2_thum4.png" class="img-fluid" alt=""></a>
-                        </div>
-                        <h3 class="title">
-                            <a href="tintuc-binhchon.html" class="three-line inc-title">
-                                Thư chúc mừng của Chủ tịch Ủy ban Chứng khoán nhà nước
-                            </a>
-                        </h3>
-                        <div class="datetime">
-                            <span class="item-calendar"></span>
-                            <span class="time">15/04/2021 10:26:08</span>
-                        </div>
-                    </div>
-                        <div class="list-item">
-                            <div class="thumb">
-                                <a href="#"><img src="img/new/top_2_thum1.png" class="img-fluid" alt=""></a>
-                            </div>
-                            <h3 class="title">
-                                <a href="" class="three-line inc-title">
-                                    Đảng ủy cơ quan Ủy ban Chứng khoán Nhà nước sơ kết công tác xây dựng Đảng 6 tháng đầu
-                                    năm
-                                </a>
-                            </h3>
-                            <div class="datetime">
-                                <span class="item-calendar"></span>
-                                <span class="time">15/04/2021 10:26:08</span>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="thumb">
-                                <a href="#"><img src="img/new/top_2_thum2.png" class="img-fluid" alt=""></a>
-                            </div>
-                            <h3 class="title">
-                                <a href="" class="three-line inc-title">
-                                    Bổ nhiệm Lãnh đạo Sở Giao dịch chứng khoán Việt Nam và HNX
-                                </a>
-                            </h3>
-                            <div class="datetime">
-                                <span class="item-calendar"></span>
-                                <span class="time">15/04/2021 10:26:08</span>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="thumb">
-                                <a href="#"><img src="img/new/top_2_thum3.png" class="img-fluid" alt=""></a>
-                            </div>
-                            <h3 class="title">
-                                <a href="" class="three-line inc-title">
-                                    Công bố Lệnh của Chủ tịch nước CHXHCN Việt Nam công bố Luật Chứng khoán số 54/2019/QH14
-                                </a>
-                            </h3>
-                            <div class="datetime">
-                                <span class="item-calendar"></span>
-                                <span class="time">15/04/2021 10:26:08</span>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="thumb">
-                                <a href="#"><img src="img/new/top_2_thum4.png" class="img-fluid" alt=""></a>
-                            </div>
-                            <h3 class="title">
-                                <a href="" class="three-line inc-title">
-                                    Thư chúc mừng của Chủ tịch Ủy ban Chứng khoán nhà nước
-                                </a>
-                            </h3>
-                            <div class="datetime">
-                                <span class="item-calendar"></span>
-                                <span class="time">15/04/2021 10:26:08</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="ft-cate">
+                    <ul class="ul-ft">
+                        <li>
+                            <a href="">Sơ đồ site</a>
+                        </li>
+                        <li>
+                            <a href="">Thông tin liên hệ </a>
+                        </li>
+                        <li>
+                            <a href="">Hướng dẫn sử dụng</a>
+                        </li>
+                        <li>
+                            <a href="">Đường dây nóng</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="list-cate">
-                <div class="cate-item">
-                    <a href="">
-                        <img src="img/new/top_right1.png" class="img-fluid"/>
-                    </a>
+            <div class="ft-right">
+                <div class="traffic">
+                    <p><b> Khách online</b>: 259</p>
+                    <p><b> Lượt truy cập:</b> 101,774,261</p>
                 </div>
-                <div class="cate-item">
-                    <a href="">
-                        <img src="img/new/top_right2.png" class="img-fluid pt-1"/>
-                    </a>
-                </div>
-                <div class="cate-item">
-                    <a href="">
-                        <img src="img/new/top_right3.png" class="img-fluid pt-1"/>
-                    </a>
-                </div>
-                <div class="cate-item">
-                    <a href="">
-                        <img src="img/new/top_right4.png" class="img-fluid pt-1"/>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="main-content pt-3">
-            <div class="row">
-                <div class="col-lg-4 list-items row-eq-height">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">THÔNG BÁO - Chỉ đạo điều hành</h2>
-                        </div>
-                        <div class="cate-tab">
-                            <div class="cate-tab-content pt-3">
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            UBCKNN thông báo giảm kiểm toán viên trong danh sách kiểm toán chấp thuận
-                                            năm 2021...
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Chấp thuận tăng kiểm toán viên trong danh sách kiểm toán viên được chấp
-                                            thuận năm 2021...
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Hủy tư cách công ty đại chúng của CTCP Đo đạc và Khoáng sản
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-button">
-                                    <a class="btn-viewmore" href="">Xem thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 list-items center-list row-eq-height">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">THÔNG TIN CÔNG BỐ</h2>
-                        </div>
-                        <div class="cate-tab">
-                            <div class="cate-tab-content pt-3">
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Doanh nghiệp FDI niêm yết, đăng ký giao dịch trên TTCK – Thực trạng, tác
-                                            động
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            UBCKNN công bố Quyết định số 667/QĐ - UBCK về việc công khai quyết toán ngân
-                                            sách năm 2020
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Thông báo nộp lệ phí cấp lại Chứng chỉ hành nghề chứng khoán (Thông báo số
-                                            144/TB-UBCK)
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-button">
-                                    <a class="btn-viewmore" href="">Xem thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 list-items row-eq-height">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">HOẠT ĐỘNG PHÁT HÀNH</h2>
-                        </div>
-                        <div class="cate-tab">
-                            <div class="cate-tab-content pt-3">
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            UBCKNN nhận được tài liệu báo cáo phát hành cổ phiếu để trả cổ tức của Ngân
-                                            hàng TMCP Nam Á
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            UBCKNN nhận được báo cáo kết quả chào bán cổ phiếu riêng lẻ của CTCP Rau quả
-                                            Thực phẩm An Giang
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            UBCKNN nhận được báo cáo kết quả chào bán cổ phiếu riêng lẻ của CTCP Dịch vụ
-                                            biển Tân Cảng
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-button">
-                                    <a class="btn-viewmore" href="">Xem thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 list-items row-eq-height">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">HOẠT ĐỘNG KINH DOANH CHỨNG KHOÁN</h2>
-                        </div>
-                        <div class="cate-tab">
-                            <div class="cate-tab-content pt-3">
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            UBCKNN điều chỉnh Giấy phép thành lập và hoạt động của Công ty cổ phần chứng
-                                            khoán VIX
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            UBCKNN nhận được tài liệu báo cáo kết quả phân phối chứng quyền đợt 5 năm
-                                            2021 của Công ty CP Chứng khoán KIS Việt Nam
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Cấp Giấy chứng nhận đăng ký lập quỹ đại chúng cho Quỹ đầu tư trái phiếu linh
-                                            hoạt Mirae Asset Việt Nam
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-button">
-                                    <a class="btn-viewmore" href="">Xem thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 list-items center-list row-eq-height">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">THANH TRA - GIÁM SÁT</h2>
-                        </div>
-                        <div class="cate-tab">
-                            <div class="cate-tab-content pt-3">
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng
-                                            khoán đối với Công ty cổ phần Tập đoàn Kỹ nghệ...
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng
-                                            khoán đối với Công ty cổ phần Louis Capital
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng
-                                            khoán đối với CTCP Kính Đáp Cầu
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-button">
-                                    <a class="btn-viewmore" href="">Xem thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 list-items row-eq-height">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">VĂN BẢN MỚI</h2>
-                        </div>
-                        <div class="cate-tab">
-                            <div class="cate-tab-content pt-3">
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng
-                                            khoán đối với Công ty cổ phần Tập đoàn Kỹ nghệ...
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng
-                                            khoán đối với Công ty cổ phần Louis Capital
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng
-                                            khoán đối với CTCP Kính Đáp Cầu
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-button">
-                                    <a class="btn-viewmore" href="">Xem thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 list-items row-eq-height">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">TIN ẢNH</h2>
-                        </div>
-                        <div class="cate-tab">
-                            <div class="cate-tab-content pt-3">
-                                <div class="home-new-slide">
-                                    <div class="news-item">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="img/new/new-img.png" class="img-fluid" alt=""/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="news-title">
-                                                <a href="" class="three-line">
-                                                    Đảng ủy cơ quan Ủy ban Chứng khoán Nhà nước sơ kết công tác xây dựng
-                                                    Đảng 6 tháng đầu năm và triển khai nhiệm vụ 6 tháng cuối năm
-                                                    2021</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="news-item">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="img/new/new-img.png" class="img-fluid" alt=""/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="news-title">
-                                                <a href="" class="three-line">Đảng ủy cơ quan Ủy ban Chứng khoán Nhà
-                                                    nước sơ kết công tác xây dựng Đảng 6 tháng đầu năm và triển khai
-                                                    nhiệm vụ 6 tháng cuối năm 2021</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="news-item">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="img/new/new-img.png" class="img-fluid" alt=""/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="news-title">
-                                                <a href="" class="three-line"
-                                                >Đảng ủy cơ quan Ủy ban Chứng khoán Nhà nước sơ kết công tác xây dựng
-                                                    Đảng 6 tháng đầu năm và triển khai nhiệm vụ 6 tháng cuối năm 2021</a
-                                                >
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 list-items center-list row-eq-height">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">TIN VIDEO</h2>
-                        </div>
-                        <div class="cate-tab">
-                            <div class="cate-tab-content pt-3">
-                                <div class="home-new-slide slide-videos">
-                                    <div class="news-item">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="img/new/new-video.png" class="img-fluid" alt=""/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="news-title">
-                                                <a href="" class="three-line">
-                                                    Nghị định 155 Quy định về chào bán phát hành chứng khoán</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="news-item">
-                                        <div class="image">
-                                            <a href="">
-                                                <img src="img/new/new-video.png" class="img-fluid" alt=""/>
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="news-title">
-                                                <a href="" class="three-line">Nghị định 155 Quy định về chào bán phát
-                                                    hành chứng khoán</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 list-items row-eq-height">
-                    <div class="left-item-double">
-                        <div class="cate-title">
-                            <h2 class="heading">BIỂU ĐỒ GIAO DỊCH CHỨNG KHOÁN</h2>
-                        </div>
-                        <div class="box-tab">
-                            <div class="tab-heading">
-                                <div data-target="tab1" class="tab-heading-item active">
-                                    HNX
-                                </div>
-                                <div data-target="tab2" class="tab-heading-item">HOSE</div>
-                            </div>
-                            <div class="tab-content">
-                                <div data-source="tab1" class="tab-content-item">
-                                    <div class="sub-tab">
-                                        <img src="img/char.png" class="img-fluid">
-                                    </div>
-                                </div>
-                                <div data-source="tab2" class="tab-content-item" style="display: none">
-                                    <p class="p-5">content 2</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 list-items row-eq-height">
-                    <div class="row">
-                        <div class="col-lg-6 list-items row-eq-height">
-                            <div class="left-item">
-                                <div class="cate-title">
-                                    <h2 class="heading">THỐNG KÊ THỊ TRƯỜNG</h2>
-                                </div>
-                                <div class="cate-tab">
-                                    <div class="cate-tab-content pt-3 no-height">
-                                        <div class="ct-content-item">
-                                            <h3 class="title">
-                                                <a class="three-line" href="">
-                                                    Giao dịch của nhà đầu tư nước ngoài 11 năm 2021
-                                                </a>
-                                            </h3>
-                                            <div class="datetime">
-                                                <span class="item-calendar"></span>
-                                                <span class="time">15/04/2021</span>
-                                            </div>
-                                        </div>
-                                        <div class="ct-content-item">
-                                            <h3 class="title">
-                                                <a class="three-line" href="">
-                                                    Giá trị giao dịch bình quân tháng 11 năm 2021
-                                                </a>
-                                            </h3>
-                                            <div class="datetime">
-                                                <span class="item-calendar"></span>
-                                                <span class="time">15/04/2021</span>
-                                            </div>
-                                        </div>
-                                        <div class="ct-content-item">
-                                            <h3 class="title">
-                                                <a class="three-line" href="">
-                                                    Chỉ số chứng khoán trong nước tháng 11 năm 2021
-                                                </a>
-                                            </h3>
-                                            <div class="datetime">
-                                                <span class="item-calendar"></span>
-                                                <span class="time">15/04/2021</span>
-                                            </div>
-                                        </div>
-                                        <div class="ct-content-item">
-                                            <h3 class="title">
-                                                <a class="three-line" href="">
-                                                    Chỉ số chứng khoán trong nước tháng 11 năm 2021
-                                                </a>
-                                            </h3>
-                                            <div class="datetime">
-                                                <span class="item-calendar"></span>
-                                                <span class="time">15/04/2021</span>
-                                            </div>
-                                        </div>
-                                        <div class="ct-content-button">
-                                            <a class="btn-viewmore" href="">Xem thêm</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 list-items center-list row-eq-height">
-                            <div class="left-item">
-                                <div class="cate-title">
-                                    <h2 class="heading">LIên kết nhanh</h2>
-                                </div>
-                                <div class="website-link">
-                                    <div class="web-item">
-                                        <a href=""><img src="img/icon-ap.png"> ẤN PHẨM</a>
-                                    </div>
-                                    <div class="web-item">
-                                        <a href=""><img src="img/icon-gy.png"> GÓP Ý DỰ THẢO VĂN BẢN</a>
-                                    </div>
-                                    <div class="web-item">
-                                        <a href=""><img src="img/icon-ask.png">HỎI - ĐÁP PHÁP LUẬT</a>
-                                    </div>
-                                    <div class="web-item">
-                                        <a href=""><img src="img/icon-rp.png">PHẢN ÁNH - KIẾN NGHỊ</a>
-                                    </div>
-                                    <div class="web-item">
-                                        <a href=""><img src="img/icon-kn.png">KHIẾU NẠI - TỐ CÁO</a>
-                                    </div>
-                                    <div class="web-item">
-                                        <a href=""><img src="img/icon-ltcd.png">LỊCH TIẾP CÔNG DÂN</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row logo-website">
-                        <div class="col-lg-6 p-0">
-                            <img src="img/dcsvn.png" class="img-fluid">
-                            <img src="img/chinhphu.png" class="img-fluid">
-                        </div>
-                        <div class="col-lg-6 p-0 logo-website-right ">
-                            <img src="img/vpqh.png" class="img-fluid">
-                            <img src="img/btc.png" class="img-fluid">
-                        </div>
-                        <div class="col-lg-12 p-0">
-                            <img src="img/banner_knscc.png" class="img-fluid banner_knscc">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 list-items row-eq-height">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">LIÊN KẾT WEBSITE</h2>
-                        </div>
-                        <div class="website-link">
-                            <div class="web-item">
-                                <a href="">BỘ VÀ CÁC CƠ QUAN NGANG BỘ</a>
-                            </div>
-                            <div class="web-item">
-                                <a href="">CÁC ĐƠN VỊ TỔNG CỤC (BỘ TÀI CHÍNH) </a>
-                            </div>
-                            <div class="web-item">
-                                <a href="">ỦY BAN CHỨNG KHOÁN CÁC NƯỚC</a>
-                            </div>
-                            <div class="web-item">
-                                <a href="">CÁC CƠ QUAN BÁO CHÍ</a>
-                            </div>
-                        </div>
-                        <div class="list-banner-right"><img src="img/banner-right-b-1.png" class="img-fluid p-1">
-                            <img src="img/banner-right-b-2.png" class="img-fluid p-1">
-                            <img src="img/banner-right-b-3.png" class="img-fluid p-1">
-                            <img src="img/banner-right-b-4.png" class="img-fluid p-1">
-                            <img src="img/banner-right-b-5.png" class="img-fluid p-1">
-                            <img src="img/banner-right-b-6.png" class="img-fluid p-1">
-                        </div>
-                    </div>
+                <div class="ft-social">
+                    <ul class="ul-social">
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="footer">
-    <div class="container">
-        <div class="ft-left">
-            <a class="logo-ft pt-2" href="">
-                <img src="img/logo.png" alt=""/>
-            </a>
-        </div>
-        <div class="ft-center">
-            <div class="ft-center-content">
-                <p class="fsize-18"><b>CỔNG THÔNG TIN ĐIỆN TỬ - ỦY BAN CHỨNG KHOÁN NHÀ NƯỚC</b></p>
-                <p>
-                    Số giấy phép: <strong>300/GP-BC, Bộ Văn hoá - Thông tin cấp ngày 01/7/2004</strong><br>
-                    Tổng biên tập: <strong>Phó Chủ Tịch UBCKNN – Ông Phạm Hồng Sơn.</strong><br>
-                    <strong> Địa chỉ:</strong> Số 234 Lương Thế Vinh, Phường Trung Văn, Quận Nam Từ Liêm, Tp. Hà Nội<br>
-                    <strong>Điện thoại:</strong> (84-24) 39.340.750 Fax: (84-24) 39.340.739
-                </p>
-            </div>
-
-            <div class="ft-cate">
-                <ul class="ul-ft">
-                    <li>
-                        <a href="">Sơ đồ site</a>
-                    </li>
-                    <li>
-                        <a href="">Thông tin liên hệ </a>
-                    </li>
-                    <li>
-                        <a href="">Hướng dẫn sử dụng</a>
-                    </li>
-                    <li>
-                        <a href="">Đường dây nóng</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="ft-right">
-            <div class="traffic">
-                <p><b> Khách online</b>: 259</p>
-                <p><b> Lượt truy cập:</b> 101,774,261</p>
-            </div>
-            <div class="ft-social">
-                <ul class="ul-social">
-                    <li>
-                        <a href=""><i class="icon-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="icon-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="icon-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="icon-youtube"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="opacity hidden"></div>
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/custom.js"></script>
+    <div class="opacity hidden"></div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/video.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
+
 </html>

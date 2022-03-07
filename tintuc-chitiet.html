@@ -1,593 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tin Tức chi tiết</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/owl.carousel.css"/>
-    <link rel="stylesheet" href="css/fontello.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/responsive.css"/>
-    <link rel="stylesheet" href="css/ie.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/green-audio-player.min.css" />
+    <link rel="stylesheet" href="css/ie.css" />
+    <link rel="stylesheet" href="css/video-js.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 </head>
+
 <body>
-  <header>
-      <div class="header-banner">
-          <div class="banner">
-              <div class="container">
-                  <div class="btn-menu">
-                      <a href="javascript:void(0)" class="btn-menu-mobile">
-                          <i class="icon-menu"></i>
-                      </a>
-                  </div>
-                  <div class="logo">
-                      <a href="index.html">
-                          <img src="img/logo.png" alt=""/>
-                      </a>
-                  </div>
-                  <div id="menu-mobile">
-                      <div class="head-menu">
-                          <div class="top-head-menu">
-                  <span id="closemenu" class="close-menu  pointer">
-                      <i class="icon-close"></i>
-                  </span>
-                              <div class="pd-10">
-                                  <h2 class="aside-title">Danh mục</h2>
-                              </div>
-                              <form action="search" class="search" method="get" accept-charset="utf-8">
-                                  <input type="text" name="q" placeholder="Tìm kiếm" autocomplete="off">
-                                  <button type="submit" title="Tìm kiếm" class="btn-search-vne">
-                                      <i class="icon-search"></i>
-                                  </button>
-                              </form>
-                          </div>
-                          <ul class="menu-category">
-                              <li>
-                                  <a href="#">Giới thiệu</a>
-                              </li>
-                              <li>
-                                  <a href="tintuc.html">Tin tức & sự kiện</a>
-                              </li>
-                              <li>
-                                  <a href="#">Hệ thống văn bản</a>
-                              </li>
-                              <li>
-                                  <a href="#">Đào tạo</a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div id="navbar" class="menu">
-              <nav class="navbar box-shadow navbar-expand-lg navbar-light">
-                  <div class="container">
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav mr-auto">
-                              <li class="nav-item nav-item-menu">
-                                  <a class="nav-item-menu" href="#">
-                                  </a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                  <a class="nav-link" href="tintuc.html">
-                                      Giới thiệu
-                                  </a>
-                                  <ul class="dropdown-menu box-shadow" >
-                                      <li><a class="dropdown-item" href="#">Lịch sử phát triển</a></li>
-                                      <li><a class="dropdown-item" href="#">Chức năng nhiệm vụ</a></li>
-                                      <li><a class="dropdown-item" href="#">Cơ cấu tổ chức</a></li>
-                                      <li><a class="dropdown-item" href="#">Ban Lãnh đạo UBCKNN</a></li>
-                                  </ul>
-                              </li>
-                              <li class="nav-item dropdown active">
-                                  <a class="nav-link" href="tintuc.html">
-                                      Tin tức & sự kiện
-                                  </a>
-                                  <ul class="dropdown-menu box-shadow">
-                                      <li><a class="dropdown-item" href="#">Thông báo chỉ đạo – điều hành</a></li>
-                                      <li><a class="dropdown-item" href="#">Thông tin công bố</a></li>
-                                      <li><a class="dropdown-item" href="#">Thanh tra – giám sát</a></li>
-                                      <li><a class="dropdown-item" href="#">Hoạt động phát hành</a></li>
-                                      <li><a class="dropdown-item" href="#">Hoạt động kinh doanh chứng khoán</a></li>
-                                      <li><a class="dropdown-item" href="#">Hoạt động hợp tác quốc tế</a></li>
-                                      <li><a class="dropdown-item" href="#">Hoạt động kỷ niệm</a></li>
-                                      <li><a class="dropdown-item" href="#">Chiến lược phát triển ngành</a></li>
-                                      <li><a class="dropdown-item" href="#">Dự án, hạng mục đầu tư, đấu thầu, mua sắm công</a></li>
-                                  </ul>
-                              </li>
-                              <li class="nav-item dropdown">
-                                  <a class="nav-link" href="#">
-                                      Hệ thống văn bản
-                                  </a>
-                                  <ul class="dropdown-menu box-shadow">
-                                      <li><a class="dropdown-item" href="#">Luật</a></li>
-                                      <li><a class="dropdown-item" href="#">Nghị định</a></li>
-                                      <li><a class="dropdown-item" href="#">Thông tư</a></li>
-                                      <li><a class="dropdown-item" href="#">Quyết định</a></li>
-                                      <li><a class="dropdown-item" href="#">Các văn bản khác</a></li>
-                                  </ul>
-                              </li><li class="nav-item dropdown">
-                                  <a class="nav-link" href="#">
-                                      Đào tạo
-                                  </a>
-                                  <ul class="dropdown-menu box-shadow">
-                                      <li><a class="dropdown-item" href="#">Thông tin đào tạo</a></li>
-                                      <li><a class="dropdown-item" href="#">Kiến thức chứng khoán</a></li>
-                                      <li><a class="dropdown-item" href="#">Đề tài nghiên cứu khoa học</a></li>
-                                  </ul>
-                              </li>
-                          </ul>
-                          <div class="search">
-                              <a href="index.html">
-                                  <img src="img/vi.png"/>
-                              </a>
-                              <a href="index_en.html">
-                                  <img src="img/en.png"/>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </nav>
-          </div>
-          <div class="header-top">
-              <div class="container">
-                  <div class="float-left breadcrumb-list">
-                      <a href="index.html"><img src="img/homed.png" class="p-2"></a> <a href="tintuc.html">TIN TỨC &
-                      SỰ KIỆN</a> / HOẠT ĐỘNG PHÁT HÀNH
-                  </div>
-                  <div class="float-right">
-                      <span class="headtime">Thứ hai 22/03/2021 23:27</span>
-                      <div class="search pl-5">
-                          <div class="box-search">
-                              <input class="input-search form-control" type="search" placeholder="Tìm kiếm"
-                                     aria-label="Tìm kiếm">
-                          </div>
-                          <a class="btn-search" href="javascript:void(0)">
-                              Tìm kiếm <i class="icon-search"></i>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <nav id="navbar-mb" class="site-menu">
-          <div class="container">
-              <ul class="site-menu__list">
-                  <li>
-                      <a href="index.html" class="pr-3"> <img src="img/home-button.png" class="mb-home"/></a>
-                  </li>
-                  <li>
-                      <a href="#">Giới thiệu</a>
-                  </li>
-                  <li>
-                      <a href="tintuc.html">Tin tức & sự kiện</a>
-                  </li>
-                  <li>
-                      <a href="#">Hệ thống văn bản</a>
-                  </li>
-                  <li>
-                      <a href="#">Đào tạo</a>
-                  </li>
-              </ul>
-          </div>
-      </nav>
-  </header>
-<div class="main tin_tuc">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 pr-0">
-                <div class="list-items">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">HOẠT ĐỘNG KỶ NIỆM</h2>
-                        </div>
-                        <div class="new-content">
-                            <h1 class="detail-title">Đảng bộ cơ quan Ủy ban Chứng khoán nhà nước vững tin bước vào
-                                mùa Xuân mới</h1>
-                            <div class="btn-time">
-                                <div class="datetime">
-                                    <span class="item-calendar"></span>
-                                    <span class="time">15/04/2021 08:00:00</span>
-                                </div>
-                                <div class="datetime pl-3">Cỡ chữ: <a href="#" class="px-1">A-</a> <a href="#">A+</a>
-                                </div>
-                                <div class="datetime pl-3"><a href="#" class="pr-3"><img src="img/volum.png"></a><a
-                                        href="#">
-                                    <img src="img/play.png"></a></div>
-                                <div class="datetime pl-3">Tương phải: <a href="#" class="px-1">Giảm</a> <a
-                                        href="#">Tăng</a></div>
-                                <div class="datetime text-right ml-auto pl-5"><a href="#" class="pr-2"><img
-                                        src="img/share.png"></a><a href="#" class="pr-2"><img src="img/print.png"></a><a
-                                        href="#"><img src="img/email.png"></a></div>
-                            </div>
-                            <div class="sapo-detail">
-                                Trong bối cảnh đại dịch COVID-19 tiếp tục ảnh hưởng sâu rộng đến mọi hoạt động kinh tế -
-                                xã hội nói chung và thị trường chứng khoán nói riêng, năm 2021, Đảng bộ cơ quan Ủy ban
-                                Chứng khoán nhà nước đã chỉ đạo triển khai tốt các nhiệm vụ chính trị được giao; đồng
-                                thời, lãnh đạo tổ chức Đảng và đảng viên thực hiện tốt nhiệm vụ công tác đảng. Những kết
-                                quả đạt được trong năm 2021 là nền tảng để Đảng bộ cơ quan Ủy ban Chứng khoán nhà nước
-                                vững tin bước vào mùa Xuân mới 2022.
-                            </div>
-                            <div class="detail-content">
-                                <p><img src="img/new/new3.jpg" class="img-fluid" alt=""><br><br>
-                                    <strong>Phát huy vai trò hạt nhân chính trị</strong>
-                                </p>
-
-
-                                <p>Trong năm 2021, Đảng bộ cơ quan Ủy ban Chứng khoán nhà nước (UBCKNN) đã phát huy vai
-                                    trò hạt nhân, nâng cao năng lực lãnh đạo đơn vị thực hiện tốt nhiệm vụ được giao
-                                    trong tình hình dịch bệnh Covid-19 diễn biến phức tạp. Năm 2021 đánh dấu 25 năm ra
-                                    đời UBCKNN và 21 năm vận hành thị trường chứng khoán (TTCK) Việt Nam với việc TTCK
-                                    đã đạt những thành quả hết sức ấn tượng, khẳng định sức vươn lên mạnh mẽ, thực sự
-                                    trở thành kênh huy động vốn trung và dài hạn quan trọng cho phát triển kinh tế Việt
-                                    Nam… Cụ thể:</p>
-
-                                <p>Trên thị trường cổ phiếu, chỉ số VN-Index nhiều lần thiết lập đỉnh lịch sử mới. Đến
-                                    hết ngày 31/12/2021, chỉ số VN-Index đạt 1.498,28 điểm, tăng 35,7% so với cuối năm
-                                    2020. Quy mô vốn hóa cổ phiếu trên thị trường đạt khoảng 7.729 nghìn tỷ đồng (trên
-                                    92% GDP ước thực hiện năm 2021), tăng 46% so với cuối năm 2020. Cùng với sự tăng
-                                    trưởng mạnh mẽ về chỉ số, thanh khoản trên thị trường cổ phiếu năm 2021 vẫn tiếp tục
-                                    bùng nổ và tăng mạnh nhờ dòng tiền của các nhà đầu tư trong nước. Tính chung năm
-                                    2021, giá trị giao dịch bình quân đạt hơn 26.564 tỷ đồng/phiên, tăng 258% so với
-                                    bình quân năm 2020.</p>
-
-                                <p>Năm 2021, số lượng nhà đầu tư tham gia TTCK tăng mạnh đã góp phần đẩy thanh khoản thị
-                                    trường lên hàng tỷ USD/phiên. Tổng số lượng tài khoản chứng khoán tại Việt Nam tính
-                                    đến tháng 12/2021 đã lên con số 4,08 triệu tài khoản, tăng 47,3% so với cuối năm
-                                    2020.</p>
-
-                                <p>Thị trường chứng khoán phái sinh đón nhận thêm sản phẩm hợp đồng tương lai trái phiếu
-                                    chính phủ kỳ hạn 10 năm. Thị trường trái phiếu niêm yết duy trì ổn định, quy mô niêm
-                                    yết đạt hơn 1,51 triệu tỷ đồng, tăng 8,9% so với cuối năm 2020.</p>
-
-                                <p> Để TTCK Việt Nam phát triển toàn diện, trong năm 2021, UBCKNN đã trình Bộ Tài chính
-                                    ban hành 03 Thông tư hướng dẫn (Thông tư số 51/2021/TT-BTC ngày 30/06/2021 về việc
-                                    hướng dẫn nghĩa vụ của tổ chức, các nhân trong hoạt động đầu tư nước ngoài; Thông tư
-                                    số 57/2021/TT-BTC ngày 12/07/2021 quy định lộ trình sắp xếp lại TTCK phái sinh và
-                                    giao dịch các loại chứng khoán khác và Thông tư số 58/2021/TT-BTC ngày 12/07/2021
-                                    hướng dẫn một số điều của Nghị định số 158/2020/NĐ-CP ngày 31/12/2020 của Chính phủ
-                                    về chứng khoán phái sinh và TTCK phái sinh), cũng như tiếp tục chủ động, tích cực
-                                    hoàn thiện hệ thống các văn bản pháp lý. Để đáp ứng nhu cầu thực tiễn, UBCKNN cũng
-                                    tập trung nghiên cứu, xây dựng nhiều Đề án, chính sách phát triển thị trường. UBCKNN
-                                    đang lấy ý kiến các bộ, ngành liên quan về Đề án Chiến lược phát triển TTCK Việt Nam
-                                    giai đoạn 2021 – 2030…</p>
-
-                                <p> Cùng với các giải pháp, chính sách ứng phó với tác động của dịch Covid-19, dưới sự
-                                    chỉ đạo của Đảng ủy cơ quan UBCKNN, trong năm 2021, UBCKNN tiếp tục triển khai tái
-                                    cấu trúc TTCK, tăng cường công tác quản lý công ty đại chúng và các tổ chức kinh
-                                    doanh chứng khoán. Hoạt động thanh tra, giám sát, xử lý vi phạm đã được đẩy mạnh
-                                    trong bối cảnh các hành vi vi phạm trong lĩnh vực chứng khoán ngày càng tinh vi,
-                                    phức tạp. Bên cạnh đó, UBCKNN luôn tăng cường kỷ cương, kỷ luật trong tổ chức bộ
-                                    máy, thực hiện cải cách hành chính trong các hoạt động của UBCKNN đối với doanh
-                                    nghiệp…</p>
-
-                                <p><strong>Xây dựng tổ chức Đảng trong sạch, vững mạnh</strong></p>
-
-                                <p>Trong năm 2021, Đảng ủy cơ quan UBCKNN đã thực hiện quán triệt đầy đủ các nghị quyết,
-                                    chỉ thị của Đảng các cấp (Nghị quyết Trung ương XIII; Nghị quyết Đại hội Đảng bộ
-                                    Khối nhiệm kỳ 2020 – 2025; Nghị quyết Đại hội Đảng bộ Bộ Tài chính nhiệm kỳ 2020 –
-                                    2025; Nghị quyết Đại hội Đảng bộ cơ quan UBCKNN, nhiệm kỳ 2020 – 2025); thực hiện
-                                    tốt công tác bảo vệ chính trị nội bộ.</p>
-
-                                <p>Học tập và làm theo Bác đã trở thành công việc thường xuyên, liên tục tại UBCKNN
-                                    nhiều năm qua. Trên cơ sở các kết quả đạt được, trong năm 2021, Đảng ủy cơ quan
-                                    UBCKNN đã xây dựng Kế hoạch 140-KH/ĐUUB thực hiện Kết luận số 01-KL/TW ngày
-                                    18/5/2021 của Bộ Chính trị về việc tiếp tục đẩy mạnh học tập và làm theo tư tưởng,
-                                    đạo đức, phong cách Hồ Chí Minh theo Chỉ thị số 05-CT/TW; Kế hoạch học tập chuyên đề
-                                    toàn khóa và năm 2021, 2022. Bên cạnh đó, Đảng ủy tổ chức nghiên cứu, triển khai học
-                                    tập, tuyên truyền Kết luận số 21-KL/TW ngày 25/10/2021 của BCHTW về đẩy mạnh xây
-                                    dựng, chỉnh đốn Đảng và hệ thống chính trị, kiên quyết ngăn chặn, đẩy lùi, xử lý
-                                    nghiêm cán bộ, đảng viên suy thoái về tư tưởng chính trị, đạo đức, lối sống, biểu
-                                    hiện “tự diễn biến”, “tự chuyển hóa”; và Quy định số 37-QĐ/TW ngày 25/10/2021 của
-                                    BCHTW về những điều đảng viên không được làm.</p>
-
-                                <p>Công tác lãnh đạo chính trị tư tưởng được Đảng ủy cơ quan UBCKNN quan tâm chỉ đạo sát
-                                    sao, qua đó không ngừng nâng cao về nhận thức chính trị tư tưởng, trách nhiệm của tổ
-                                    chức đảng và đảng viên trong toàn Đảng bộ trong quá trình rèn luyện và nỗ lực vượt
-                                    qua khó khăn hoàn thành tốt mọi nhiệm vụ được giao.</p>
-
-                                <p>Đảng ủy cơ quan UBCKNN không ngừng đổi mới và tăng cường công tác kiểm tra, giám sát.
-                                    Hoạt động kiểm tra, giám sát tại đơn vị ngày một nền nếp, thường xuyên hơn theo đúng
-                                    kế hoạch đã đề ra, góp phần giữ nghiêm kỷ cương, kỷ luật của Đảng, xây dựng các tổ
-                                    chức Đảng và đơn vị vững mạnh, tạo sự ổn định, đoàn kết trong nội bộ.</p>
-
-                                <p>Ngoài ra, công tác dân vận tại Đảng bộ cơ quan UBCKNN đã được tăng cường và đổi mới
-                                    theo tinh thần Nghị quyết của Đảng cấp trên. Đảng ủy cơ quan UBCKNN đã lãnh đạo các
-                                    tổ chức đoàn thể hoạt động theo đúng định hướng, thiết thực, hiệu quả, động viên
-                                    được toàn thể đoàn viên, hội viên nỗ lực phấn đấu hoàn thành tốt nhiệm vụ chính trị
-                                    được giao, góp phần xây dựng cơ quan, đơn vị ngày càng vững mạnh.</p>
-
-                                <p>Năm 2021 đánh dấu sự kiện 25 năm thành lập UBCKNN và hơn 21 năm vận hành TTCK, dù
-                                    chặng đường chưa thực sự dài và dù còn gặp nhiều khó khăn, thách thức nhưng những
-                                    thành quả đạt được của ngành Chứng khoán trong thời gian qua là rất đáng tự hào.</p>
-
-                                <p>Tại Chiến lược phát triển kinh tế xã hội 10 năm giai đoạn 2021-2030, Đảng và Nhà nước
-                                    đã đặt ra yêu cầu, nhiệm vụ đối với TTCK Việt Nam trong 10 năm tới là trở thành kênh
-                                    huy động vốn chủ yếu của nền kinh tế. Với các kết quả đã đạt được trong thời gian
-                                    qua và đặc biệt trong năm 2021, Đảng bộ cơ quan UBCKNN vững tin trong năm 2022 tiếp
-                                    tục lãnh đạo, chỉ đạo toàn đơn vị thực hiện tốt các nhiệm vụ chính trị được giao,
-                                    triển khai đồng bộ các giải pháp điều hành TTCK Việt Nam vượt qua các khó khăn,
-                                    thách thức, đón nhận các cơ hội, bước vào một mùa Xuân mới phát triển mạnh mẽ, khẳng
-                                    định kênh huy động vốn chủ yếu của nền kinh tế; đồng thời xây dựng Đảng bộ cơ quan,
-                                    đơn vị ngày càng trong sạch, vững mạnh.</p>
-                                <div class="text-right author">ĐẢNG UỶ CƠ QUAN UỶ BAN CHỨNG KHOÁN NHÀ NƯỚC</div>
-                                <div class="datetime text-right ml-auto mt-2"><a href="#" class="pr-2"><img
-                                        src="img/share.png"></a><a href="#" class="pr-2"><img src="img/print.png"></a><a
-                                        href="#"><img src="img/email.png"></a></div>
-                            </div>
-
-                        </div>
-                        <div class="other-news">
-                            <div class="other-news-title"><h2>Các tin khác</h2></div>
-                            <div class="list-other">
-                                <ul>
-                                    <li>
-                                        <a href="#">Tổng Bí thư Nguyễn Phú Trọng: ‘Tôi tin chắc rằng cuộc bầu cử lần này thành công tốt đẹp’ <span>(23/05/2021)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Phát huy tinh thần đoàn kết, hăng hái đi bầu cử để chọn người đức, tài xây dựng đất nước <span>(23/05/2021)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Thủ tướng Phạm Minh Chính bỏ phiếu bầu cử, thực hiện quyền và nghĩa vụ công dân <span>(23/05/2021)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Chủ tịch Quốc hội Vương Đình Huệ Tin tưởng vào sự đồng lòng của nhân dân và cử tri cả nước <span>(23/05/2021)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Standard and Poor’s nâng triển vọng của Việt Nam từ Ổn định lên Tích cực <span>(21/05/2021)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sáng suốt lựa chọn người đại biểu của nhân dân <span>(21/05/2021)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sử dụng hơn 12.000 tỷ đồng từ nguồn tăng thu và tiết kiệm chi năm 2020 mua vắc xin phòng Covid-19 <span>(21/05/2021)</span></a>
-                                    </li><li>
-                                    <a href="#">Bộ Tài chính trình Chính phủ thành lập Quỹ vắc xin phòng Covid-19 <span>(19/05/2021)</span></a>
-                                </li>
-                                    <li>
-                                        <a href="#">Bộ Tài chính tiếp tục đề xuất nhiều chính sách hỗ trợ cho các đối tượng bị ảnh hưởng dịch Covid <span>(19/05/2021)</span></a>
-                                    </li><li>
-                                    <a href="#">Hết Quý I/2021, số dư Quỹ BOG Xăng dầu còn 5.340,068 tỷ đồng <span>(18/05/2021)</span></a>
-                                </li>
-                                </ul>
-                            </div>
-                        </div>
+    <header>
+        <div class="header-banner">
+            <div class="banner">
+                <div class="container">
+                    <div class="btn-menu">
+                        <a href="javascript:void(0)" class="btn-menu-mobile">
+                            <i class="icon-menu"></i>
+                        </a>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="list-items">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">Tin tức & sự kiện</h2>
-                        </div>
-                        <div class="cate-list-right">
-                            <ul>
-                                <li><a href="">Tin tức - Sự kiện</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="">Chào bán chứng khoán ra công chúng</a></li>
-                                        <li><a href="">Phát hành cổ phiếu trả cổ tức</a></li>
-                                        <li><a href="">Phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở
-                                            hữu</a></li>
-                                        <li><a href="">Phát hành cổ phiếu cho CBCNV</a></li>
-                                        <li><a href="">Chào bán cổ phiếu riêng lẻ</a></li>
-                                        <li><a href="">Giao dịch cổ phiếu quỹ</a></li>
-                                        <li><a href="">Chào mua công khai</a></li>
-                                    </ul>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div id="menu-mobile">
+                        <div class="head-menu">
+                            <div class="top-head-menu">
+                                <span id="closemenu" class="close-menu  pointer">
+                                    <i class="icon-close"></i>
+                                </span>
+                                <div class="pd-10">
+                                    <h2 class="aside-title">Danh mục</h2>
+                                </div>
+                                <form action="search" class="search" method="get" accept-charset="utf-8">
+                                    <input type="text" name="q" placeholder="Tìm kiếm" autocomplete="off">
+                                    <button type="submit" title="Tìm kiếm" class="btn-search-vne">
+                                        <i class="icon-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <ul class="menu-category">
+                                <li>
+                                    <a href="#">Giới thiệu</a>
                                 </li>
-                                <li><a href="">Thông cáo báo chí</a></li>
-                                <li class="active"><a href="">Tin Tài chính địa phương</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="">Chào bán chứng khoán ra công chúng</a></li>
-                                        <li><a href="">Phát hành cổ phiếu trả cổ tức</a></li>
-                                        <li><a href="">Phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở
-                                            hữu</a></li>
-                                        <li><a href="">Phát hành cổ phiếu cho CBCNV</a></li>
-                                        <li><a href="">Chào bán cổ phiếu riêng lẻ</a></li>
-                                        <li><a href="">Giao dịch cổ phiếu quỹ</a></li>
-                                        <li><a href="">Chào mua công khai</a></li>
-                                    </ul>
+                                <li>
+                                    <a href="tintuc.html">Tin tức & sự kiện</a>
                                 </li>
-                                <li><a href="">Hoạt động ngành tài chính</a></li>
-                                <li><a href="">Nghiên cứu trao đổi</a></li>
-                                <li><a href="">HÌNH ẢNH - Phóng sự ảnh</a></li>
-                                <li><a href="" class="active">Tin Audio - Video</a></li>
+                                <li>
+                                    <a href="#">Hệ thống văn bản</a>
+                                </li>
+                                <li>
+                                    <a href="#">Đào tạo</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="list-items">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">Xem nhiều nhất</h2>
-                        </div>
-                        <div class="cate-tab">
-                            <div class="cate-tab-content pt-3">
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Bộ trưởng Bộ Tài chính khai trương phiên giao dịch chứng khoán đầu năm 2022 tại SGDCK Hà Nội
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Trung tâm Lưu ký Chứng khoán Việt Nam trong sự phát triển của ngành chứng khoán Việt Nam
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div>
-                                <div class="ct-content-item">
-                                    <h3 class="title">
-                                        <a class="three-line" href="">
-                                            Hủy tư cách công ty đại chúng của CTCP Đo đạc và Khoáng sản
-                                        </a>
-                                    </h3>
-                                    <div class="datetime">
-                                        <span class="item-calendar"></span>
-                                        <span class="time">15/04/2021</span>
-                                    </div>
-                                </div><div class="ct-content-item">
-                                <h3 class="title">
-                                    <a class="three-line" href="">
-                                        Triển khai hội nghị tập huấn công tác kiểm soát tài sản thu nhập tại Uỷ ban Chứng khoán Nhà nước
+            </div>
+            <div id="navbar" class="menu">
+                <nav class="navbar box-shadow navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item nav-item-menu">
+                                    <a class="nav-item-menu" href="#">
                                     </a>
-                                </h3>
-                                <div class="datetime">
-                                    <span class="item-calendar"></span>
-                                    <span class="time">15/04/2021</span>
-                                </div>
-                            </div><div class="ct-content-item">
-                                <h3 class="title">
-                                    <a class="three-line" href="">
-                                        Hội nghị đại biểu cán bộ công chức, viên chức UBCKNN năm 2021
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="tintuc.html">
+                                        Giới thiệu
                                     </a>
-                                </h3>
-                                <div class="datetime">
-                                    <span class="item-calendar"></span>
-                                    <span class="time">15/04/2021</span>
-                                </div>
-                            </div>
-                                <div class="ct-content-button">
-                                    <a class="btn-viewmore" href="">Xem thêm</a>
-                                </div>
+                                    <ul class="dropdown-menu box-shadow">
+                                        <li><a class="dropdown-item" href="#">Lịch sử phát triển</a></li>
+                                        <li><a class="dropdown-item" href="#">Chức năng nhiệm vụ</a></li>
+                                        <li><a class="dropdown-item" href="#">Cơ cấu tổ chức</a></li>
+                                        <li><a class="dropdown-item" href="#">Ban Lãnh đạo UBCKNN</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link" href="tintuc.html">
+                                        Tin tức & sự kiện
+                                    </a>
+                                    <ul class="dropdown-menu box-shadow">
+                                        <li><a class="dropdown-item" href="#">Thông báo chỉ đạo – điều hành</a></li>
+                                        <li><a class="dropdown-item" href="#">Thông tin công bố</a></li>
+                                        <li><a class="dropdown-item" href="#">Thanh tra – giám sát</a></li>
+                                        <li><a class="dropdown-item" href="#">Hoạt động phát hành</a></li>
+                                        <li><a class="dropdown-item" href="#">Hoạt động kinh doanh chứng khoán</a></li>
+                                        <li><a class="dropdown-item" href="#">Hoạt động hợp tác quốc tế</a></li>
+                                        <li><a class="dropdown-item" href="#">Hoạt động kỷ niệm</a></li>
+                                        <li><a class="dropdown-item" href="#">Chiến lược phát triển ngành</a></li>
+                                        <li><a class="dropdown-item" href="#">Dự án, hạng mục đầu tư, đấu thầu, mua sắm
+                                                công</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#">
+                                        Hệ thống văn bản
+                                    </a>
+                                    <ul class="dropdown-menu box-shadow">
+                                        <li><a class="dropdown-item" href="#">Luật</a></li>
+                                        <li><a class="dropdown-item" href="#">Nghị định</a></li>
+                                        <li><a class="dropdown-item" href="#">Thông tư</a></li>
+                                        <li><a class="dropdown-item" href="#">Quyết định</a></li>
+                                        <li><a class="dropdown-item" href="#">Các văn bản khác</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#">
+                                        Đào tạo
+                                    </a>
+                                    <ul class="dropdown-menu box-shadow">
+                                        <li><a class="dropdown-item" href="#">Thông tin đào tạo</a></li>
+                                        <li><a class="dropdown-item" href="#">Kiến thức chứng khoán</a></li>
+                                        <li><a class="dropdown-item" href="#">Đề tài nghiên cứu khoa học</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="search">
+                                <a href="index.html">
+                                    <img src="img/vi.png" />
+                                </a>
+                                <a href="index_en.html">
+                                    <img src="img/en.png" />
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="list-items">
-                    <div class="left-item">
-                        <div class="cate-title">
-                            <h2 class="heading">Mới nhất</h2>
-                        </div>
-                        <div class="cate-tab">
-                            <div class="cate-tab-content pt-3">
-                                <div class="list-item-right">
-                                    <div class="thumb">
-                                        <a href="#"><img src="img/new/top_2_thum1.png" class="img-fluid" alt=""></a>
-                                    </div>
-                                    <h3>
-                                        <a href="" class="inc-title-right">
-                                            Đảng ủy cơ quan Ủy ban Chứng khoán Nhà nước sơ kết công tác xây dựng Đảng 6 tháng đầu
-                                            năm
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="list-item-right">
-                                    <div class="thumb">
-                                        <a href="#"><img src="img/new/top_2_thum2.png" class="img-fluid" alt=""></a>
-                                    </div>
-                                    <h3>
-                                        <a href="" class="inc-title-right">
-                                            Bổ nhiệm Lãnh đạo Sở Giao dịch chứng khoán Việt Nam và HNX
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="list-item-right">
-                                    <div class="thumb">
-                                        <a href="#"><img src="img/new/top_2_thum3.png" class="img-fluid" alt=""></a>
-                                    </div>
-                                    <h3 >
-                                        <a href="" class="inc-title-right">
-                                            Công bố Lệnh của Chủ tịch nước CHXHCN Việt Nam công bố Luật Chứng khoán số 54/2019/QH14
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="list-item-right">
-                                    <div class="thumb">
-                                        <a href="#"><img src="img/new/top_2_thum4.png" class="img-fluid" alt=""></a>
-                                    </div>
-                                    <h3 >
-                                        <a href="" class="inc-title-right">
-                                            Thư chúc mừng của Chủ tịch Ủy ban Chứng khoán nhà nước
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="ct-content-button">
-                                    <a class="btn-viewmore" href="">Xem thêm</a>
-                                </div>
+                </nav>
+            </div>
+            <div class="header-top">
+                <div class="container">
+                    <div class="float-left breadcrumb-list">
+                        <a href="index.html"><img src="img/homed.png" class="p-2"></a> <a href="tintuc.html">TIN TỨC &
+                            SỰ KIỆN</a> / HOẠT ĐỘNG PHÁT HÀNH
+                    </div>
+                    <div class="float-right">
+                        <span class="headtime">Thứ hai 22/03/2021 23:27</span>
+                        <div class="search pl-5">
+                            <div class="box-search">
+                                <input class="input-search form-control" type="search" placeholder="Tìm kiếm"
+                                    aria-label="Tìm kiếm">
                             </div>
+                            <a class="btn-search" href="javascript:void(0)">
+                                Tìm kiếm <i class="icon-search"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="footer">
-    <div class="container">
-        <div class="ft-left">
-            <a class="logo-ft pt-2" href="">
-                <img src="img/logo.png" alt=""/>
-            </a>
-        </div>
-        <div class="ft-center">
-            <div class="ft-center-content">
-                <p class="fsize-18"><b>CỔNG THÔNG TIN ĐIỆN TỬ - ỦY BAN CHỨNG KHOÁN NHÀ NƯỚC</b></p>
-                <p>
-                    Số giấy phép: <strong>300/GP-BC, Bộ Văn hoá - Thông tin cấp ngày 01/7/2004</strong><br>
-                    Tổng biên tập: <strong>Phó Chủ Tịch UBCKNN – Ông Phạm Hồng Sơn.</strong><br>
-                    <strong> Địa chỉ:</strong> Số 234 Lương Thế Vinh, Phường Trung Văn, Quận Nam Từ Liêm, Tp. Hà Nội<br>
-                    <strong>Điện thoại:</strong> (84-24) 39.340.750 Fax: (84-24) 39.340.739
-                </p>
+        <nav id="navbar-mb" class="site-menu">
+            <div class="container">
+                <ul class="site-menu__list">
+                    <li>
+                        <a href="index.html" class="pr-3"> <img src="img/home-button.png" class="mb-home" /></a>
+                    </li>
+                    <li>
+                        <a href="#">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="tintuc.html">Tin tức & sự kiện</a>
+                    </li>
+                    <li>
+                        <a href="#">Hệ thống văn bản</a>
+                    </li>
+                    <li>
+                        <a href="#">Đào tạo</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
+    </header>
+    <div class="main tin_tuc">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 pr-0">
+                    <div class="list-items">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">HOẠT ĐỘNG KỶ NIỆM</h2>
+                            </div>
+                            <div class="new-content">
+                                <h1 class="detail-title">Đảng bộ cơ quan Ủy ban Chứng khoán nhà nước vững tin bước vào
+                                    mùa Xuân mới</h1>
+                                <div class="btn-time">
+                                    <div class="datetime">
+                                        <span class="item-calendar"></span>
+                                        <span class="time">15/04/2021 08:00:00</span>
+                                    </div>
+                                    <div class="datetime pl-3">Cỡ chữ: <a href="#" class="px-1">A-</a> <a
+                                            href="#">A+</a>
+                                    </div>
+                                    <div class="datetime pl-3"><a href="#" class="pr-3"><img src="img/volum.png"></a><a
+                                            href="#">
+                                            <img src="img/play.png"></a></div>
+                                    <div class="datetime pl-3">Tương phải: <a href="#" class="px-1">Giảm</a> <a
+                                            href="#">Tăng</a></div>
+                                    <div class="datetime text-right ml-auto pl-5"><a href="#" class="pr-2"><img
+                                                src="img/share.png"></a><a href="#" class="pr-2"><img
+                                                src="img/print.png"></a><a href="#"><img src="img/email.png"></a></div>
+                                </div>
+                                <div class="sapo-detail">
+                                    Trong bối cảnh đại dịch COVID-19 tiếp tục ảnh hưởng sâu rộng đến mọi hoạt động kinh
+                                    tế -
+                                    xã hội nói chung và thị trường chứng khoán nói riêng, năm 2021, Đảng bộ cơ quan Ủy
+                                    ban
+                                    Chứng khoán nhà nước đã chỉ đạo triển khai tốt các nhiệm vụ chính trị được giao;
+                                    đồng
+                                    thời, lãnh đạo tổ chức Đảng và đảng viên thực hiện tốt nhiệm vụ công tác đảng. Những
+                                    kết
+                                    quả đạt được trong năm 2021 là nền tảng để Đảng bộ cơ quan Ủy ban Chứng khoán nhà
+                                    nước
+                                    vững tin bước vào mùa Xuân mới 2022.
+                                </div>
+                                <div class="detail-content">
+                                    <p><img src="img/new/new3.jpg" class="img-fluid" alt=""><br><br>
+                                        <strong>Phát huy vai trò hạt nhân chính trị</strong>
+                                    </p>
 
-            <div class="ft-cate">
-                <ul class="ul-ft">
-                    <li>
-                        <a href="">Sơ đồ site</a>
-                    </li>
-                    <li>
-                        <a href="">Thông tin liên hệ </a>
-                    </li>
-                    <li>
-                        <a href="">Hướng dẫn sử dụng</a>
-                    </li>
-                    <li>
-                        <a href="">Đường dây nóng</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="ft-right">
-            <div class="traffic">
-                <p><b> Khách online</b>: 259</p>
-                <p><b> Lượt truy cập:</b> 101,774,261</p>
-            </div>
-            <div class="ft-social">
-                <ul class="ul-social">
-                    <li>
-                        <a href=""><i class="icon-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="icon-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="icon-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="icon-youtube"></i></a>
-                    </li>
-                </ul>
+
+                                    <p>Trong năm 2021, Đảng bộ cơ quan Ủy ban Chứng khoán nhà nước (UBCKNN) đã phát huy
+                                        vai
+                                        trò hạt nhân, nâng cao năng lực lãnh đạo đơn vị thực hiện tốt nhiệm vụ được giao
+                                        trong tình hình dịch bệnh Covid-19 diễn biến phức tạp. Năm 2021 đánh dấu 25 năm
+                                        ra
+                                        đời UBCKNN và 21 năm vận hành thị trường chứng khoán (TTCK) Việt Nam với việc
+                                        TTCK
+                                        đã đạt những thành quả hết sức ấn tượng, khẳng định sức vươn lên mạnh mẽ, thực
+                                        sự
+                                        trở thành kênh huy động vốn trung và dài hạn quan trọng cho phát triển kinh tế
+                                        Việt
+                                        Nam… Cụ thể:</p>
+
+                                    <p>Trên thị trường cổ phiếu, chỉ số VN-Index nhiều lần thiết lập đỉnh lịch sử mới.
+                                        Đến
+                                        hết ngày 31/12/2021, chỉ số VN-Index đạt 1.498,28 điểm, tăng 35,7% so với cuối
+                                        năm
+                                        2020. Quy mô vốn hóa cổ phiếu trên thị trường đạt khoảng 7.729 nghìn tỷ đồng
+                                        (trên
+                                        92% GDP ước thực hiện năm 2021), tăng 46% so với cuối năm 2020. Cùng với sự tăng
+                                        trưởng mạnh mẽ về chỉ số, thanh khoản trên thị trường cổ phiếu năm 2021 vẫn tiếp
+                                        tục
+                                        bùng nổ và tăng mạnh nhờ dòng tiền của các nhà đầu tư trong nước. Tính chung năm
+                                        2021, giá trị giao dịch bình quân đạt hơn 26.564 tỷ đồng/phiên, tăng 258% so với
+                                        bình quân năm 2020.</p>
+
+                                    <p>Năm 2021, số lượng nhà đầu tư tham gia TTCK tăng mạnh đã góp phần đẩy thanh khoản
+                                        thị
+                                        trường lên hàng tỷ USD/phiên. Tổng số lượng tài khoản chứng khoán tại Việt Nam
+                                        tính
+                                        đến tháng 12/2021 đã lên con số 4,08 triệu tài khoản, tăng 47,3% so với cuối năm
+                                        2020.</p>
+
+                                    <p>Thị trường chứng khoán phái sinh đón nhận thêm sản phẩm hợp đồng tương lai trái
+                                        phiếu
+                                        chính phủ kỳ hạn 10 năm. Thị trường trái phiếu niêm yết duy trì ổn định, quy mô
+                                        niêm
+                                        yết đạt hơn 1,51 triệu tỷ đồng, tăng 8,9% so với cuối năm 2020.</p>
+
+                                    <p> Để TTCK Việt Nam phát triển toàn diện, trong năm 2021, UBCKNN đã trình Bộ Tài
+                                        chính
+                                        ban hành 03 Thông tư hướng dẫn (Thông tư số 51/2021/TT-BTC ngày 30/06/2021 về
+                                        việc
+                                        hướng dẫn nghĩa vụ của tổ chức, các nhân trong hoạt động đầu tư nước ngoài;
+                                        Thông tư
+                                        số 57/2021/TT-BTC ngày 12/07/2021 quy định lộ trình sắp xếp lại TTCK phái sinh
+                                        và
+                                        giao dịch các loại chứng khoán khác và Thông tư số 58/2021/TT-BTC ngày
+                                        12/07/2021
+                                        hướng dẫn một số điều của Nghị định số 158/2020/NĐ-CP ngày 31/12/2020 của Chính
+                                        phủ
+                                        về chứng khoán phái sinh và TTCK phái sinh), cũng như tiếp tục chủ động, tích
+                                        cực
+                                        hoàn thiện hệ thống các văn bản pháp lý. Để đáp ứng nhu cầu thực tiễn, UBCKNN
+                                        cũng
+                                        tập trung nghiên cứu, xây dựng nhiều Đề án, chính sách phát triển thị trường.
+                                        UBCKNN
+                                        đang lấy ý kiến các bộ, ngành liên quan về Đề án Chiến lược phát triển TTCK Việt
+                                        Nam
+                                        giai đoạn 2021 – 2030…</p>
+
+                                    <p> Cùng với các giải pháp, chính sách ứng phó với tác động của dịch Covid-19, dưới
+                                        sự
+                                        chỉ đạo của Đảng ủy cơ quan UBCKNN, trong năm 2021, UBCKNN tiếp tục triển khai
+                                        tái
+                                        cấu trúc TTCK, tăng cường công tác quản lý công ty đại chúng và các tổ chức kinh
+                                        doanh chứng khoán. Hoạt động thanh tra, giám sát, xử lý vi phạm đã được đẩy mạnh
+                                        trong bối cảnh các hành vi vi phạm trong lĩnh vực chứng khoán ngày càng tinh vi,
+                                        phức tạp. Bên cạnh đó, UBCKNN luôn tăng cường kỷ cương, kỷ luật trong tổ chức bộ
+                                        máy, thực hiện cải cách hành chính trong các hoạt động của UBCKNN đối với doanh
+                                        nghiệp…</p>
+
+                                    <p><strong>Xây dựng tổ chức Đảng trong sạch, vững mạnh</strong></p>
+
+                                    <p>Trong năm 2021, Đảng ủy cơ quan UBCKNN đã thực hiện quán triệt đầy đủ các nghị
+                                        quyết,
+                                        chỉ thị của Đảng các cấp (Nghị quyết Trung ương XIII; Nghị quyết Đại hội Đảng bộ
+                                        Khối nhiệm kỳ 2020 – 2025; Nghị quyết Đại hội Đảng bộ Bộ Tài chính nhiệm kỳ 2020
+                                        –
+                                        2025; Nghị quyết Đại hội Đảng bộ cơ quan UBCKNN, nhiệm kỳ 2020 – 2025); thực
+                                        hiện
+                                        tốt công tác bảo vệ chính trị nội bộ.</p>
+
+                                    <p>Học tập và làm theo Bác đã trở thành công việc thường xuyên, liên tục tại UBCKNN
+                                        nhiều năm qua. Trên cơ sở các kết quả đạt được, trong năm 2021, Đảng ủy cơ quan
+                                        UBCKNN đã xây dựng Kế hoạch 140-KH/ĐUUB thực hiện Kết luận số 01-KL/TW ngày
+                                        18/5/2021 của Bộ Chính trị về việc tiếp tục đẩy mạnh học tập và làm theo tư
+                                        tưởng,
+                                        đạo đức, phong cách Hồ Chí Minh theo Chỉ thị số 05-CT/TW; Kế hoạch học tập
+                                        chuyên đề
+                                        toàn khóa và năm 2021, 2022. Bên cạnh đó, Đảng ủy tổ chức nghiên cứu, triển khai
+                                        học
+                                        tập, tuyên truyền Kết luận số 21-KL/TW ngày 25/10/2021 của BCHTW về đẩy mạnh xây
+                                        dựng, chỉnh đốn Đảng và hệ thống chính trị, kiên quyết ngăn chặn, đẩy lùi, xử lý
+                                        nghiêm cán bộ, đảng viên suy thoái về tư tưởng chính trị, đạo đức, lối sống,
+                                        biểu
+                                        hiện “tự diễn biến”, “tự chuyển hóa”; và Quy định số 37-QĐ/TW ngày 25/10/2021
+                                        của
+                                        BCHTW về những điều đảng viên không được làm.</p>
+
+                                    <p>Công tác lãnh đạo chính trị tư tưởng được Đảng ủy cơ quan UBCKNN quan tâm chỉ đạo
+                                        sát
+                                        sao, qua đó không ngừng nâng cao về nhận thức chính trị tư tưởng, trách nhiệm
+                                        của tổ
+                                        chức đảng và đảng viên trong toàn Đảng bộ trong quá trình rèn luyện và nỗ lực
+                                        vượt
+                                        qua khó khăn hoàn thành tốt mọi nhiệm vụ được giao.</p>
+
+                                    <p>Đảng ủy cơ quan UBCKNN không ngừng đổi mới và tăng cường công tác kiểm tra, giám
+                                        sát.
+                                        Hoạt động kiểm tra, giám sát tại đơn vị ngày một nền nếp, thường xuyên hơn theo
+                                        đúng
+                                        kế hoạch đã đề ra, góp phần giữ nghiêm kỷ cương, kỷ luật của Đảng, xây dựng các
+                                        tổ
+                                        chức Đảng và đơn vị vững mạnh, tạo sự ổn định, đoàn kết trong nội bộ.</p>
+
+                                    <p>Ngoài ra, công tác dân vận tại Đảng bộ cơ quan UBCKNN đã được tăng cường và đổi
+                                        mới
+                                        theo tinh thần Nghị quyết của Đảng cấp trên. Đảng ủy cơ quan UBCKNN đã lãnh đạo
+                                        các
+                                        tổ chức đoàn thể hoạt động theo đúng định hướng, thiết thực, hiệu quả, động viên
+                                        được toàn thể đoàn viên, hội viên nỗ lực phấn đấu hoàn thành tốt nhiệm vụ chính
+                                        trị
+                                        được giao, góp phần xây dựng cơ quan, đơn vị ngày càng vững mạnh.</p>
+
+                                    <p>Năm 2021 đánh dấu sự kiện 25 năm thành lập UBCKNN và hơn 21 năm vận hành TTCK, dù
+                                        chặng đường chưa thực sự dài và dù còn gặp nhiều khó khăn, thách thức nhưng
+                                        những
+                                        thành quả đạt được của ngành Chứng khoán trong thời gian qua là rất đáng tự hào.
+                                    </p>
+
+                                    <p>Tại Chiến lược phát triển kinh tế xã hội 10 năm giai đoạn 2021-2030, Đảng và Nhà
+                                        nước
+                                        đã đặt ra yêu cầu, nhiệm vụ đối với TTCK Việt Nam trong 10 năm tới là trở thành
+                                        kênh
+                                        huy động vốn chủ yếu của nền kinh tế. Với các kết quả đã đạt được trong thời
+                                        gian
+                                        qua và đặc biệt trong năm 2021, Đảng bộ cơ quan UBCKNN vững tin trong năm 2022
+                                        tiếp
+                                        tục lãnh đạo, chỉ đạo toàn đơn vị thực hiện tốt các nhiệm vụ chính trị được
+                                        giao,
+                                        triển khai đồng bộ các giải pháp điều hành TTCK Việt Nam vượt qua các khó khăn,
+                                        thách thức, đón nhận các cơ hội, bước vào một mùa Xuân mới phát triển mạnh mẽ,
+                                        khẳng
+                                        định kênh huy động vốn chủ yếu của nền kinh tế; đồng thời xây dựng Đảng bộ cơ
+                                        quan,
+                                        đơn vị ngày càng trong sạch, vững mạnh.</p>
+                                    <div class="text-right author">ĐẢNG UỶ CƠ QUAN UỶ BAN CHỨNG KHOÁN NHÀ NƯỚC</div>
+                                </div>
+
+                            </div>
+                            <div class="other-news">
+                                <div class="other-news-title">
+                                    <h2>Các tin khác</h2>
+                                </div>
+                                <div class="list-other">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Tổng Bí thư Nguyễn Phú Trọng: ‘Tôi tin chắc rằng cuộc bầu cử lần
+                                                này thành công tốt đẹp’ <span>(23/05/2021)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Phát huy tinh thần đoàn kết, hăng hái đi bầu cử để chọn người
+                                                đức, tài xây dựng đất nước <span>(23/05/2021)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Thủ tướng Phạm Minh Chính bỏ phiếu bầu cử, thực hiện quyền và
+                                                nghĩa vụ công dân <span>(23/05/2021)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Chủ tịch Quốc hội Vương Đình Huệ Tin tưởng vào sự đồng lòng của
+                                                nhân dân và cử tri cả nước <span>(23/05/2021)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Standard and Poor’s nâng triển vọng của Việt Nam từ Ổn định lên
+                                                Tích cực <span>(21/05/2021)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sáng suốt lựa chọn người đại biểu của nhân dân
+                                                <span>(21/05/2021)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sử dụng hơn 12.000 tỷ đồng từ nguồn tăng thu và tiết kiệm chi
+                                                năm 2020 mua vắc xin phòng Covid-19 <span>(21/05/2021)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bộ Tài chính trình Chính phủ thành lập Quỹ vắc xin phòng
+                                                Covid-19 <span>(19/05/2021)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bộ Tài chính tiếp tục đề xuất nhiều chính sách hỗ trợ cho các
+                                                đối tượng bị ảnh hưởng dịch Covid <span>(19/05/2021)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Hết Quý I/2021, số dư Quỹ BOG Xăng dầu còn 5.340,068 tỷ đồng
+                                                <span>(18/05/2021)</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="list-items">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">Tin tức & sự kiện</h2>
+                            </div>
+                            <div class="cate-list-right">
+                                <ul>
+                                    <li><a href="">Tin tức - Sự kiện</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">Chào bán chứng khoán ra công chúng</a></li>
+                                            <li><a href="">Phát hành cổ phiếu trả cổ tức</a></li>
+                                            <li><a href="">Phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở
+                                                    hữu</a></li>
+                                            <li><a href="">Phát hành cổ phiếu cho CBCNV</a></li>
+                                            <li><a href="">Chào bán cổ phiếu riêng lẻ</a></li>
+                                            <li><a href="">Giao dịch cổ phiếu quỹ</a></li>
+                                            <li><a href="">Chào mua công khai</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Thông cáo báo chí</a></li>
+                                    <li class="active"><a href="">Tin Tài chính địa phương</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">Chào bán chứng khoán ra công chúng</a></li>
+                                            <li><a href="">Phát hành cổ phiếu trả cổ tức</a></li>
+                                            <li><a href="">Phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở
+                                                    hữu</a></li>
+                                            <li><a href="">Phát hành cổ phiếu cho CBCNV</a></li>
+                                            <li><a href="">Chào bán cổ phiếu riêng lẻ</a></li>
+                                            <li><a href="">Giao dịch cổ phiếu quỹ</a></li>
+                                            <li><a href="">Chào mua công khai</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Hoạt động ngành tài chính</a></li>
+                                    <li><a href="">Nghiên cứu trao đổi</a></li>
+                                    <li><a href="">HÌNH ẢNH - Phóng sự ảnh</a></li>
+                                    <li><a href="" class="active">Tin Audio - Video</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-items">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">Xem nhiều nhất</h2>
+                            </div>
+                            <div class="cate-tab">
+                                <div class="cate-tab-content pt-3">
+                                    <div class="ct-content-item">
+                                        <h3 class="title">
+                                            <a class="three-line" href="">
+                                                Bộ trưởng Bộ Tài chính khai trương phiên giao dịch chứng khoán đầu năm
+                                                2022 tại SGDCK Hà Nội
+                                            </a>
+                                        </h3>
+                                        <div class="datetime">
+                                            <span class="item-calendar"></span>
+                                            <span class="time">15/04/2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-item">
+                                        <h3 class="title">
+                                            <a class="three-line" href="">
+                                                Trung tâm Lưu ký Chứng khoán Việt Nam trong sự phát triển của ngành
+                                                chứng khoán Việt Nam
+                                            </a>
+                                        </h3>
+                                        <div class="datetime">
+                                            <span class="item-calendar"></span>
+                                            <span class="time">15/04/2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-item">
+                                        <h3 class="title">
+                                            <a class="three-line" href="">
+                                                Hủy tư cách công ty đại chúng của CTCP Đo đạc và Khoáng sản
+                                            </a>
+                                        </h3>
+                                        <div class="datetime">
+                                            <span class="item-calendar"></span>
+                                            <span class="time">15/04/2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-item">
+                                        <h3 class="title">
+                                            <a class="three-line" href="">
+                                                Triển khai hội nghị tập huấn công tác kiểm soát tài sản thu nhập tại Uỷ
+                                                ban Chứng khoán Nhà nước
+                                            </a>
+                                        </h3>
+                                        <div class="datetime">
+                                            <span class="item-calendar"></span>
+                                            <span class="time">15/04/2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-item">
+                                        <h3 class="title">
+                                            <a class="three-line" href="">
+                                                Hội nghị đại biểu cán bộ công chức, viên chức UBCKNN năm 2021
+                                            </a>
+                                        </h3>
+                                        <div class="datetime">
+                                            <span class="item-calendar"></span>
+                                            <span class="time">15/04/2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-button">
+                                        <a class="btn-viewmore" href="">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-items">
+                        <div class="left-item">
+                            <div class="cate-title">
+                                <h2 class="heading">Mới nhất</h2>
+                            </div>
+                            <div class="cate-tab">
+                                <div class="cate-tab-content pt-3">
+                                    <div class="list-item-right">
+                                        <div class="thumb">
+                                            <a href="#"><img src="img/new/top_2_thum1.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <h3 class="title">
+                                            <a href="" class="inc-title-right">
+                                                Đảng ủy cơ quan Ủy ban Chứng khoán Nhà nước sơ kết công tác xây dựng
+                                                Đảng 6 tháng đầu
+                                                năm
+                                            </a>
+                                        </h3>
+                                        <div class="datetime">
+                                            <span class="item-calendar"></span>
+                                            <span class="time">15/04/2021 10:26:08</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-right">
+                                        <div class="thumb">
+                                            <a href="#"><img src="img/new/top_2_thum2.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <h3 class="title">
+                                            <a href="" class="inc-title-right">
+                                                Bổ nhiệm Lãnh đạo Sở Giao dịch chứng khoán Việt Nam và HNX
+                                            </a>
+                                        </h3>
+                                        <div class="datetime">
+                                            <span class="item-calendar"></span>
+                                            <span class="time">15/04/2021 10:26:08</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-right">
+                                        <div class="thumb">
+                                            <a href="#"><img src="img/new/top_2_thum3.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <h3 class="title">
+                                            <a href="" class="inc-title-right">
+                                                Công bố Lệnh của Chủ tịch nước CHXHCN Việt Nam công bố Luật Chứng khoán
+                                                số 54/2019/QH14
+                                            </a>
+                                        </h3>
+                                        <div class="datetime">
+                                            <span class="item-calendar"></span>
+                                            <span class="time">15/04/2021 10:26:08</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-right">
+                                        <div class="thumb">
+                                            <a href="#"><img src="img/new/top_2_thum4.png" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <h3 class="title">
+                                            <a href="" class="inc-title-right">
+                                                Thư chúc mừng của Chủ tịch Ủy ban Chứng khoán nhà nước
+                                            </a>
+                                        </h3>
+                                        <div class="datetime">
+                                            <span class="item-calendar"></span>
+                                            <span class="time">15/04/2021 10:26:08</span>
+                                        </div>
+                                    </div>
+                                    <div class="ct-content-button">
+                                        <a class="btn-viewmore" href="">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="opacity hidden"></div>
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/custom.js"></script>
+    <div class="footer">
+        <div class="container">
+            <div class="ft-left">
+                <a class="logo-ft pt-2" href="">
+                    <img src="img/logo.png" alt="" />
+                </a>
+            </div>
+            <div class="ft-center">
+                <div class="ft-center-content">
+                    <p class="fsize-18"><b>CỔNG THÔNG TIN ĐIỆN TỬ - ỦY BAN CHỨNG KHOÁN NHÀ NƯỚC</b></p>
+                    <p>
+                        Số giấy phép: <strong>300/GP-BC, Bộ Văn hoá - Thông tin cấp ngày 01/7/2004</strong><br>
+                        Tổng biên tập: <strong>Phó Chủ Tịch UBCKNN – Ông Phạm Hồng Sơn.</strong><br>
+                        <strong> Địa chỉ:</strong> Số 234 Lương Thế Vinh, Phường Trung Văn, Quận Nam Từ Liêm, Tp. Hà
+                        Nội<br>
+                        <strong>Điện thoại:</strong> (84-24) 39.340.750 Fax: (84-24) 39.340.739
+                    </p>
+                </div>
+
+                <div class="ft-cate">
+                    <ul class="ul-ft">
+                        <li>
+                            <a href="">Sơ đồ site</a>
+                        </li>
+                        <li>
+                            <a href="">Thông tin liên hệ </a>
+                        </li>
+                        <li>
+                            <a href="">Hướng dẫn sử dụng</a>
+                        </li>
+                        <li>
+                            <a href="">Đường dây nóng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft-right">
+                <div class="traffic">
+                    <p><b> Khách online</b>: 259</p>
+                    <p><b> Lượt truy cập:</b> 101,774,261</p>
+                </div>
+                <div class="ft-social">
+                    <ul class="ul-social">
+                        <li>
+                            <a href=""><i class="icon-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="icon-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="icon-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="icon-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="opacity hidden"></div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/video.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
+
 </html>

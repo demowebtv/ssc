@@ -1,40 +1,55 @@
-$(document).ready(function(){
-  $(".home-new-slide").owlCarousel({
-    autoPlay: false,
+$(document).ready(function () {
+  $('#news-slider').owlCarousel({
+    loop: true,
+    autoplay: false,
     autoplayTimeout: 5000,
-    slideSpeed: 500,
+    smartSpeed: 500,
     items: 1,
-    navigation: true,
-    navigationText: ["", ""],
+    dots: true,
+    nav: false,
   });
-  $("#slider").owlCarousel({
+  $("#slide-album").owlCarousel({
+    loop: true,
     autoPlay: false,
     autoplayTimeout: 5000,
-    slideSpeed: 500,
-    items: 4,
-    navigation: true,
-    itemsDesktop: [1376, 4],
-    itemsDesktopSmall: [1375, 3],
-    itemsMobile: [1024, 3],
-    itemsMobile: [768, 2],
-    itemsMobile: [767, 1],
-    navigationText: ["", ""],
+    smartSpeed: 500,
+    items: 1,
+    dots: true,
+    nav: false,
+  });
+  $("#slide-album1").owlCarousel({
+    loop: true,
+    autoPlay: false,
+    autoplayTimeout: 5000,
+    smartSpeed: 500,
+    items: 1,
+    dots: true,
+    nav: false,
+  });
+  $("#slide-videos").owlCarousel({
+    loop: true,
+    autoPlay: false,
+    autoplayTimeout: 5000,
+    smartSpeed: 500,
+    items: 1,
+    nav: true,
+    dots: false,
+    navText: []
   });
   var stickyTop = $("#navbar").offset().top;
-   var idMenu =  $("#navbar");
-   if(window.outerWidth <= 1200)
-   {
-       idMenu =  $("#navbar-mb");
-       stickyTop = idMenu.offset().top;
-   }
+  var idMenu = $("#navbar");
+  if (window.outerWidth <= 1200) {
+    idMenu = $("#navbar-mb");
+    stickyTop = idMenu.offset().top;
+  }
 
-   $(window).scroll(function () {
-       if ($(window).scrollTop() >=  stickyTop) {
-           idMenu.addClass("sticky");
-       } else {
-           idMenu.removeClass('sticky');
-       }
-   });
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= stickyTop) {
+      idMenu.addClass("sticky");
+    } else {
+      idMenu.removeClass('sticky');
+    }
+  });
   $(".box-tab .tab-heading-item").on("click", function () {
     var me = $(this);
     var idSource = me.data("target");
@@ -62,18 +77,16 @@ $(document).ready(function(){
     var me = $(this);
     me.parents(".search").toggleClass("active");
   });
-  $('.btn-menu').on("click",function()
-  {
-      $('#menu-mobile .head-menu').addClass("open");
+  $('.btn-menu').on("click", function () {
+    $('#menu-mobile .head-menu').addClass("open");
   });
-  $('#closemenu').on("click",function(){
+  $('#closemenu').on("click", function () {
     $('#menu-mobile .head-menu').removeClass("open");
   });
 
-  $('.btn-search-mobile a').on("click",function()
-  {
-      $('.search-box').toggleClass("open");
-      $('.opacity').toggleClass("hidden");
+  $('.btn-search-mobile a').on("click", function () {
+    $('.search-box').toggleClass("open");
+    $('.opacity').toggleClass("hidden");
   });
 
 });
