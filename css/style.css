@@ -476,10 +476,10 @@ ul.dropdown-menu {
 }
 
 .list-item {
-    float: left;
     padding-left: 20px;
     padding-top: 10px;
     padding-right: 15px;
+    display: flex;
 }
 
 .list-item .title {
@@ -495,8 +495,6 @@ ul.dropdown-menu {
 .list-item .thumb {
     width: 156px;
     height: 116px;
-    float: left;
-    overflow: hidden;
 }
 
 .inc-title {
@@ -2248,7 +2246,9 @@ ul.dropdown-menu {
     width: 30px;
 }
 
-
+.list-item .content {
+    width: calc(100% - 156px);
+}
 
 
 
