@@ -448,7 +448,6 @@ ul.dropdown-menu {
 
 .list-news {
     width: 450px;
-    float: left;
     margin-left: 13px;
 }
 
@@ -468,9 +467,7 @@ ul.dropdown-menu {
 }
 
 .list-news-items {
-    float: left;
     width: 100%;
-    box-sizing: border-box;
     background: #ffffff;
 }
 
