@@ -27,6 +27,20 @@ $(document).ready(function () {
     dots: false,
     navText: []
   });
+  $("#home-new-slide").owlCarousel({
+    autoPlay: false,
+    autoplayTimeout: 5000,
+    slideSpeed: 500,
+    items: 1,
+    nav: true,
+  });
+  $("#slider").owlCarousel({
+    autoPlay: false,
+    autoplayTimeout: 5000,
+    smartSpeed: 500,
+    items: 3,
+    navi: true,
+  });
   var stickyTop = $("#navbar").offset().top;
   var idMenu = $("#navbar");
   if (window.outerWidth <= 1200) {

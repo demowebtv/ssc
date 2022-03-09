@@ -575,7 +575,7 @@ ul.dropdown-menu {
 }
 
 .col-left .left-item {
-    float: left;
+    float: none;
     width: 100%;
     margin-bottom: 20px;
     background: white;
@@ -583,7 +583,7 @@ ul.dropdown-menu {
 }
 
 .col-left .cate-title {
-    float: left;
+    float: none;
     width: 100%;
 }
 
@@ -1657,6 +1657,7 @@ ul.dropdown-menu {
     font-weight: bold;
     font-size: 14px;
     display: flex;
+    align-items: center;
 }
 
 .new-content .sapo-detail {
@@ -1907,7 +1908,7 @@ ul.dropdown-menu {
 }
 
 .pagination {
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 20px;
 }
 
@@ -2407,6 +2408,101 @@ ul.dropdown-menu {
 
 .list-item .content {
     width: calc(100% - 156px);
+}
+
+.detail-title small {
+    color: #b4b4ba;
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.x5s,
+.xj3 {
+    padding: 0 !important;
+}
+
+.audio-detail {
+    height: auto !important;
+    padding: 0 !important;
+    width: auto !important;
+    min-width: 300px !important;
+    box-shadow: none !important;
+}
+
+.play-pause-btn svg {
+    width: 10px;
+    height: auto;
+}
+
+.volume__button svg {
+    width: 15px;
+    height: auto;
+}
+
+.green-audio-player .volume .volume__controls {
+    background-color: unset !important;
+    height: 90px !important;
+}
+
+.green-audio-player .slider .gap-progress .pin {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.green-audio-player .controls .controls__slider .controls__progress .progress__pin {
+    top: -4px !important;
+}
+
+.green-audio-player .volume .volume__controls .volume__slider .volume__progress .volume__pin {
+    left: -3px !important;
+}
+
+.green-audio-player .controls {
+    font-size: 14px !important;
+}
+
+.green-audio-player .slider .gap-progress .pin,
+.green-audio-player .slider .gap-progress {
+    background-color: #0e7741 !important;
+}
+
+.green-audio-player .volume .volume__button.open path {
+    fill: #0e7741 !important;
+}
+
+.green-audio-player .volume .volume__controls.top {
+    bottom: 10px !important;
+    left: -8px !important;
+}
+
+.audio-detail .loading {
+    display: none;
+}
+
+.audio-detail audio {
+    display: none;
+}
+
+.audio-detail .loading__spinner {
+    left: 0 !important;
+    bottom: 0px !important;
+    animation: spin 2.4s linear infinite !important;
+    width: 14px !important;
+    height: 14px !important;
+    border-width: 1px !important;
+}
+
+#content-voice p {
+    font-size: 14px !important;
+    line-height: initial !important;
+    margin-bottom: 1rem !important;
+}
+
+#content-voice span {
+    font-size: 14px !important;
 }
 
 
