@@ -11,7 +11,7 @@ $(document).ready(function(){
     autoPlay: false,
     autoplayTimeout: 5000,
     slideSpeed: 500,
-    items: 4,
+    items: 3,
     navigation: true,
     itemsDesktop: [1376, 4],
     itemsDesktopSmall: [1375, 3],
