@@ -802,6 +802,7 @@
 }
 
 @media screen and (max-width: 768px) {
+  .pr-0{padding-right: 15px !important;}
   .banner {
     background: none;
     position: relative;
