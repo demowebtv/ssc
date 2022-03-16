@@ -797,7 +797,7 @@ ul.dropdown-menu {
     width: 100%;
     margin-bottom: 20px;
     background: white;
-    box-shadow: 0px 3px 7px #d3d3d3;
+    /* box-shadow: 0px 3px 7px #d3d3d3; */
 }
 
 .scroll-table {
@@ -1544,8 +1544,6 @@ ul.dropdown-menu {
 
 .tin_tuc .list-tintuc p {
     color: #323232;
-    padding-right: 10px;
-    margin-bottom: 5px;
 }
 
 .cate-list-right {
@@ -1611,10 +1609,11 @@ ul.dropdown-menu {
 .breadcrumb {
     border-radius: 0;
     background-color: #eff3fe;
-    font-size: 16px;
+    font-size: initial;
     color: #474747;
     margin: 0;
-    padding: 15px 40px;
+    align-items: center;
+    padding: 7px 10px;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -1634,7 +1633,7 @@ ul.dropdown-menu {
 
 .new-content h1.detail-title {
     color: #0e7741;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
     padding-bottom: 5px;
 }
@@ -1831,13 +1830,13 @@ ul.dropdown-menu {
 }
 
 .sapo-news p {
-    font-size: 16px;
+    font-size: 14px;
     display: -webkit-box;
-    -webkit-line-clamp: 4 !important;
+    -webkit-line-clamp: 3 !important;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 0;
     color: #323232;
 }
@@ -2286,10 +2285,10 @@ ul.dropdown-menu {
 
 .thongke-right .collapsible,
 .thongke-box-right .text-title {
-    background: #1170c0;
+    background: #01884e ;
     color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 8px 15px;
     width: 100%;
     border: none;
     text-align: left;
@@ -2323,6 +2322,7 @@ ul.dropdown-menu {
 .thongke-right .content .list-items a,
 .content-text .list-items a {
     padding: 2px;
+    display: block;
 }
 
 .thongke-right .content .list-items a:hover,
@@ -2338,25 +2338,20 @@ ul.dropdown-menu {
 .thongke-right .content .list-items,
 .content-text .list-items {
     border-bottom: 1px solid #ebebeb;
-    padding: 10px 20px;
-    padding-left: 30px;
-}
-
-.thongke-right .content .list-items:first-child,
-.content-text .list-items:first-child {
-    padding-top: 10px;
+    padding: 5px 30px;
+    position: relative;
+    margin: 0;
 }
 
 .thongke-right .content .list-items::before,
 .content-text .list-items::before {
     content: "\e803";
     font-family: "fontello";
-    font-size: 18px;
-    color: #2673b4;
+    font-size: 14px;
+    color: #0b5d3a;
     position: absolute;
     left: 19px;
-    height: 100%;
-    float: left;
+    top: 7px;
 }
 
 .content-text .list-items::before {
@@ -2511,6 +2506,49 @@ ul.dropdown-menu {
 .xhc, .xhd {
     margin-bottom: 0 !important;
 }
+
+.list-items a {
+    font-size: 14px;
+}
+
+.xj3 {
+    overflow: unset !important;
+}
+
+.content-text .sub-list--item .sub-list--link {
+    position: relative;
+    padding: 5px 2px;
+}
+
+.content-text .sub-list--item .sub-list--link::before {
+    content: "\e803";
+    font-family: "fontello";
+    color: #0b5d3a;
+    position: absolute;
+    top: 5px;
+    font-size: 14px;
+    left: -11px;
+    font-weight: normal;
+}
+
+.content-text .list-items a.text-primary {
+    color: #35b470 !important;
+}
+
+.cate-title .heading a {
+    font-size: 16px;
+}
+
+.breadcrumb-icon {
+    padding: 0 7px;
+    font-size: 14px;
+    color: #9e9e9e;
+}
+
+.breadcrumb-icon.fa-home {
+    color: #0e7741;
+}
+
 
 
 
