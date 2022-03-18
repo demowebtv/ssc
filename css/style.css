@@ -28,7 +28,8 @@ ul {
 }
 
 button:focus {
-    outline: none;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .mb-home {
@@ -1628,7 +1629,7 @@ ul.dropdown-menu {
 }
 
 .new-content {
-    padding: 20px 15px;
+    padding: 20px 10px;
 }
 
 .new-content h1.detail-title {
@@ -1679,7 +1680,7 @@ ul.dropdown-menu {
 
 .other-news,
 .rating {
-    padding: 10px 15px;
+    padding: 10px 10px;
 }
 
 .other-news {
@@ -1699,7 +1700,7 @@ ul.dropdown-menu {
 }
 
 .other-news-title {
-    padding: 5px;
+    padding: 5px 0;
     border-bottom: 1px solid #ededed;
     margin-bottom: 5px;
 }
@@ -2097,23 +2098,16 @@ ul.dropdown-menu {
 
 .progress,
 .progress-bar {
-    height: 30px;
-    font-size: 18px;
+    height: 25px;
+    font-size: 14px;
     font-weight: bold;
+    border-radius: unset;
 }
 
 .progress_title {
     color: #373737;
     font-size: 18px;
     margin: 0;
-}
-
-.btn_vote {
-    padding: 2px 30px;
-    background: #35b470;
-    border-radius: 3px;
-    font-weight: bold;
-    border: 0;
 }
 
 .vote_select .row {
@@ -2149,10 +2143,6 @@ ul.dropdown-menu {
 
 [data-toggle="collapse"].collapsed .fa:before {
     content: " \25BC";
-}
-
-.btnrating {
-    padding: 4px 10px;
 }
 
 /*----------- comment vote --------------*/
@@ -2498,7 +2488,7 @@ ul.dropdown-menu {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-#content-voice span {
+#content-voice span,  #content-voice label {
     font-size: 14px !important;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
@@ -2548,6 +2538,123 @@ ul.dropdown-menu {
 .breadcrumb-icon.fa-home {
     color: #0e7741;
 }
+
+.chitiettin-attachfile {
+    padding-left: 10px;
+}
+
+.btnrating {
+    padding: 4px 10px;
+    background: none;
+    border: none !important;
+    color: #737373;
+}
+
+.btnrating:hover {
+    color: #e0a800;
+}
+
+.btn-star--selected .fa {
+    color: #e0a800;
+}
+
+.progress-item {
+    flex-wrap: nowrap;
+}
+
+.total-star {
+    display: flex;
+    align-items: center;
+}
+
+.total-star i {
+    margin-left: 5px;
+    color: #ffd045;
+}
+
+.progress-item .progress {
+    width: 100%;
+}
+
+.btn_vote {
+    padding: 2px 30px !important;
+    background: #35b470 !important;
+    border-radius: 3px !important;
+    font-weight: bold !important;
+    text-shadow: none !important;
+    border: none !important;
+    font-size: 14px !important;
+    color: #fff !important;
+}
+
+.input-comment table {
+    width: 100%;
+}
+
+.input-comment table .xu {
+    display: none;
+}
+
+.input-comment input, .input-comment textarea {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-comment {
+    padding: 6px 30px !important;
+    background: #35b470 !important;
+    border-radius: 3px !important;
+    font-weight: bold !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    text-shadow: none !important;
+}
+
+.captcha-img img {
+    height: calc(1.5em + 0.75rem + 2px);
+}
+
+.list-cmt--title {
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.list-cmt--title::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #ced4da;
+    left: 0;
+    bottom: -5px;
+}
+
+.comment-item {
+    margin-bottom: 10px;
+}
+.comment-name label {
+    color: #2673b4;
+    font-weight: bold;
+    font-size: 15px;
+}
+.cmt-time, .cmt-time label {
+    font-size: 12px;
+    color: #929292 !important;
+    font-weight: normal;
+}
+
+
 
 
 
