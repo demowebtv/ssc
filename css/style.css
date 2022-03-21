@@ -108,18 +108,17 @@ button:focus {
 .navbar .navbar-nav .nav-link {
     text-transform: uppercase;
     color: #FFF;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
-    padding: 12px 20px;
+    padding: 9px 20px;
     position: relative;
-    /* border-bottom: 4px solid #063521; */
 }
 
-.navbar .navbar-nav .nav-link::before {
+/* .navbar .navbar-nav .nav-link::before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 4px;
+    height: 2px;
     background: #fff;
     bottom: 0;
     left: 0;
@@ -128,16 +127,12 @@ button:focus {
 
 .navbar .navbar-nav .nav-link:hover::before {
     display: block;
-}
+} */
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-item.active .nav-link {
     color: #35b470;
     /* border-bottom: 4px solid #FFF; */
-}
-
-.nav-item-menu {
-    padding-right: 15px;
 }
 
 .nav-item-menu a {
@@ -1396,7 +1391,8 @@ ul.dropdown-menu {
 
 .search .box-search .input-search {
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 31px;
+    font-size: 14px;
 }
 
 .search.active .box-search {
@@ -1424,6 +1420,7 @@ ul.dropdown-menu {
     font-size: 14px;
     font-weight: normal;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn-search:hover {
@@ -2748,7 +2745,6 @@ ul.dropdown-menu {
 .album-anh a {
     font-weight: bold !important;
     white-space: unset;
-    vertical-align: unset;
     font-size: 14px !important;
     color: #35b470 !important;
     line-height: unset;
@@ -2768,6 +2764,44 @@ ul.dropdown-menu {
 
 .inline-gallery-container {
     padding-bottom: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #35b470;
+}
+
+.nav-item-home {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item-home a {
+    font-size: 15px;
+    color: #fff;
+    padding: 9px 20px;
+}
+
+.nav-item-home a:hover {
+    color: #35b470;
+}
+
+.dropdown-menu {
+    top: 100%;
+}
+
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #367e6b;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+.WCPortalBody.WCPortalStickyFooter > div, .xdw.xdx > div {
+    position: relative !important;
 }
 
 
