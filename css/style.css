@@ -2275,7 +2275,7 @@ ul.dropdown-menu {
 
 .thongke-right .collapsible,
 .thongke-box-right .text-title {
-    background: #01884e ;
+    background: #01884e;
     color: white;
     cursor: pointer;
     padding: 8px 15px;
@@ -2488,12 +2488,14 @@ ul.dropdown-menu {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-#content-voice span,  #content-voice label {
+#content-voice span,
+#content-voice label {
     font-size: 14px !important;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-.xhc, .xhd {
+.xhc,
+.xhd {
     margin-bottom: 0 !important;
 }
 
@@ -2595,7 +2597,8 @@ ul.dropdown-menu {
     display: none;
 }
 
-.input-comment input, .input-comment textarea {
+.input-comment input,
+.input-comment textarea {
     display: block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
@@ -2608,7 +2611,7 @@ ul.dropdown-menu {
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .btn-comment {
@@ -2643,12 +2646,15 @@ ul.dropdown-menu {
 .comment-item {
     margin-bottom: 10px;
 }
+
 .comment-name label {
     color: #2673b4;
     font-weight: bold;
     font-size: 15px;
 }
-.cmt-time, .cmt-time label {
+
+.cmt-time,
+.cmt-time label {
     font-size: 12px;
     color: #929292 !important;
     font-weight: normal;
@@ -2657,7 +2663,11 @@ ul.dropdown-menu {
 
 
 
-
+@media (min-width: 576px) {
+    .inline-gallery-container {
+        padding-bottom: 65%;
+    }
+}
 
 @media (max-width: 767px) {
     .box-news .news-item-top {
