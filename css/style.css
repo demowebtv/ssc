@@ -789,11 +789,11 @@ ul.dropdown-menu {
 }
 
 .col-right .right-item {
-    float: left;
+    /* float: left; */
     width: 100%;
     margin-bottom: 20px;
     background: white;
-    /* box-shadow: 0px 3px 7px #d3d3d3; */
+    box-shadow: 0px 3px 7px #d3d3d3;
 }
 
 .scroll-table {
@@ -2903,6 +2903,135 @@ ul.dropdown-menu {
     color: #364696 !important;
 }
 
+.tab-portlet-header-center {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, #08472d, #11954e);
+}
+
+.bg-menu-header-center {
+    background: #01884e;
+    color: white;
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dsvbgydt .af_goLink {
+    color: #08482d !important;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.dsvbgydt .af_goLink::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    border-color: transparent transparent #0b5d3a transparent;
+    border-style: solid;
+    border-width: 5px;
+    height: 0px;
+    width: 0px;
+    transform: rotate(90deg);
+}
+
+.dsvbgydt .public-date label{
+    color: #b4b4ba;
+    line-height: 20px;
+    position: relative;
+    padding-left: 37px;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+}
+
+.dsvbgydt .public-date label::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 2px solid;
+    border-top: 4px solid;
+    border-radius: 3px;
+    left: 15px;
+}
+
+.dsvbgydt .public-date label::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    border-radius: 3px;
+    left: 19px;
+    background: currentColor;
+    height: 2px;
+    top: 7px;
+}
+
+.dsvbgydt .pagi-page .af_commandLink{
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 7px;
+    position: relative;
+    display: block;
+    border: 1px solid #dee2e6;
+}
+
+.ap-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.dsap .af_panelBorderLayout {
+    margin-bottom: 10px;
+}
+
+.btn-tk {
+    padding: 6px 30px !important;
+    background: #35b470 !important;
+    border-radius: 3px !important;
+    font-weight: bold !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    text-shadow: none !important;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.an-pham--section {
+    padding: 10px;
+    text-align: center;
+}
+
+.kntc .af_selectOneRadio_content-input .af_selectOneRadio_native-input {
+    width: 5% !important;
+}
+
+.kntc .kn-file-input input {
+    width: 96% !important;
+}
+
+.af_image {
+    margin: 10px 0;
+}
 
 
 
