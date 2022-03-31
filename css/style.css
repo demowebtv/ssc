@@ -865,33 +865,6 @@ ul.dropdown-menu {
     background: #4f93e3;
 }
 
-/* .cate-list {
-    float: left;
-    width: 100%;
-    height: 407px;
-    overflow-y: auto;
-    background: url(../img/bg-chuyenmuc.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;
-}
-
-.cate-list::-webkit-scrollbar {
-    background-color: #fff;
-    width: 8px;
-}
-
-.cate-list::-webkit-scrollbar-track {
-    background-color: #fff;
-}
-
-.cate-list::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    border: 1px solid #bdc8d8;
-    background: fff;
-    background-clip: padding-box;
-} */
-
 .cate-ul li {
     border-bottom: 1px solid #ebebeb;
     padding: 5px 30px;
@@ -2887,6 +2860,8 @@ ul.dropdown-menu {
 
 .af_column_column-header-cell-content {
     text-align: center;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .af_column_data-cell, .af_column_banded-data-cell {
@@ -3032,6 +3007,38 @@ ul.dropdown-menu {
 .af_image {
     margin: 10px 0;
 }
+
+.ctvbdt .related-news-title {
+    margin-top: 20px;
+}
+
+.ctvbdt .related-news-title .af_outputLabel {
+    padding: 5px 0;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.ctvbdt .related-news-title .af_outputLabel label {
+    border-left: 6px solid #35b470;
+    font-weight: bold;
+    color: #35b470;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    padding-left: 7px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
