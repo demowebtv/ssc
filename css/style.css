@@ -2333,10 +2333,6 @@ ul.dropdown-menu {
     padding-bottom: 10px;
 }
 
-.ct-content-wrap {
-    height: 230px;
-}
-
 .main-top {
     display: flex;
     flex-wrap: wrap;
@@ -2775,6 +2771,7 @@ ul.dropdown-menu {
 
 .content-box table {
     width: 100% !important;
+    table-layout: auto !important;
 }
 
 .content-box label, .content-box input, .content-box select {
@@ -2997,7 +2994,7 @@ ul.dropdown-menu {
 }
 
 .an-pham--section {
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -3021,7 +3018,7 @@ ul.dropdown-menu {
     margin-top: 20px;
 }
 
-.ctvbdt .related-news-header {
+.ctvbdt .related-news-header, .cttthc .related-news-header {
     padding: 5px 0;
     border-bottom: 1px solid #ededed;
     margin-bottom: 5px;
@@ -3029,7 +3026,7 @@ ul.dropdown-menu {
     display: block;
 }
 
-.ctvbdt .related-news-header label {
+.ctvbdt .related-news-header label, .cttthc .related-news-header {
     border-left: 6px solid #35b470;
     font-weight: bold;
     color: #35b470;
@@ -3043,7 +3040,7 @@ ul.dropdown-menu {
     margin-left: 15px;
 }
 
-.ctvbdt .related-news-titles {
+.ctvbdt .related-news-titles, .cttthc .related-news-title {
     position: relative;
     display: block;
     padding: 5px 6px;
@@ -3052,7 +3049,7 @@ ul.dropdown-menu {
     color: #252525 !important;
 }
 
-.ctvbdt .related-news-titles::before {
+.ctvbdt .related-news-titles::before, .cttthc .related-news-title::before {
     width: 6px;
     height: 6px;
     background: #7c7c7c;
@@ -3063,7 +3060,7 @@ ul.dropdown-menu {
     border-radius: 100%;
 }
 
-.ctvbdt span, .ctvbdt label, .ctvbdt p {
+.ctvbdt span, .ctvbdt label, .ctvbdt p, .cttthc span, .cttthc label, .cttthc p {
     font-size: 14px !important;
     font-family: Arial, Helvetica, sans-serif !important;
 }
@@ -3077,6 +3074,15 @@ ul.dropdown-menu {
 .related-news-titles:hover {
     color: #35b470 !important; 
     text-decoration: none;
+}
+
+.cttthc .related-news-title:hover {
+    color: #35b470 !important; 
+    text-decoration: none;
+}
+
+.cttthc .related-news-title {
+    margin-left: 30px;
 }
 
 .accessClient {
@@ -3096,6 +3102,61 @@ ul.dropdown-menu {
     width: auto !important;
 }
 
+
+.cttthc .attach-file {
+    width: auto !important;
+    margin: 20px 0;
+}
+
+.so-apk .left-menu-item-box, .an-pham--section .left-menu-item-box {
+    border-bottom: 1px solid #ebebeb;
+    padding: 5px 30px;
+    position: relative;
+    margin: 0;
+    text-align: left;
+}
+
+.so-apk .left-menu-item-box::before, .an-pham--section .left-menu-item-box::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 21px;
+    border-color: transparent transparent #0b5d3a transparent;
+    border-style: solid;
+    border-width: 4px;
+    height: 0px;
+    width: 0px;
+    transform: rotate(90deg);
+}
+
+.so-apk .left-menu-item-box a,  .an-pham--section .left-menu-item-box a{
+    padding: 2px;
+    display: block;
+    color: inherit;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.so-apk .left-menu-item-box a:hover, .an-pham--section .left-menu-item-box a:hover {
+    color: #35b470;
+    text-decoration: none;
+}
+
+.an-pham--section .ap-cm_month {
+    font-size: 14px;
+}
+
+.an-pham--section .ap-cm_kieu {
+    font-size: 16px !important;
+}
+
+.an-pham--section .ap-cm_so {
+    font-size: 14px !important;
+}
+
+.dsap a {
+    font-size: 14px !important;
+}
 
 
 
