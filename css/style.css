@@ -2765,7 +2765,6 @@ ul.dropdown-menu {
 
 .content-box table {
     width: 100% !important;
-    table-layout: auto !important;
 }
 
 .content-box label, .content-box input, .content-box select {
@@ -3152,10 +3151,18 @@ ul.dropdown-menu {
     font-size: 14px !important;
 }
 
+.cttthc table{
+    table-layout: auto !important;
+}
 
+.af_table::-webkit-scrollbar {
+    scrollbar-width: none;
+    display: none;
+}
 
-
-
+#t1\:\:scroller {
+    display: none;
+}
 
 
 
