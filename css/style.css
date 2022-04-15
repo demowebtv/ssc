@@ -1448,20 +1448,14 @@ ul.dropdown-menu {
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
     position: relative;
-}
-
-.site-menu__list>li {
-    display: inline-block;
-    font-size: 0;
-    position: relative;
+    align-items: center;
 }
 
 .site-menu__list>li>a {
     display: block;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 30px;
     padding: 10px 20px;
     overflow: hidden;
     position: relative;
@@ -1478,12 +1472,8 @@ ul.dropdown-menu {
 }
 
 .site-menu i {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
     text-align: center;
     color: #fff;
-    background: #316ad1;
     border-radius: 100%;
 }
 
@@ -1879,12 +1869,16 @@ ul.dropdown-menu {
 
 .pagination {
     justify-content: center;
-    margin-right: 20px;
+    flex-wrap: wrap;
 }
 
 .pagi-page {
     width: 100%;
     margin: 10px 0;
+}
+
+.page-item {
+    margin-bottom: 5px;
 }
 
 .page-link {
@@ -3195,5 +3189,15 @@ ul.dropdown-menu {
 
     .content-box .af_inputDate input {
         width: 87% !important;
+    }
+
+    .audio-detail {
+        min-width: unset !important;
+        width: 100% !important;
+    }
+
+    .read {
+        width: 100%;
+        margin: 9px 0 0;
     }
 }
